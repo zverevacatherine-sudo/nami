@@ -412,6 +412,51 @@ body {background:radial-gradient(ellipse at 75% 8%,#e8e1ff 0,transparent 42%),ra
 @media(max-width:760px){.hero{padding:27px 0}.hero h1{font-size:clamp(2.65rem,10vw,4.1rem);line-height:1.1}.hero p{font-size:1rem;line-height:1.72}.hero-card.fairy-scene{min-height:450px;border-radius:43% 43% 28px 28px/32% 32% 28px 28px}.unicorn-wrap{top:20%;width:100%}.rainbow{width:330px;height:330px;top:49px}.rainbow-two{width:290px;height:290px;top:69px}.sticker-top{top:13%;right:2%;max-width:155px;font-size:.72rem;padding:9px 12px}.sticker-bottom{bottom:8%;left:2%;max-width:207px;font-size:.72rem;padding:9px 12px}.sky-star{font-size:18px}.fairy-footnote{font-size:.7rem}.hero-actions .button{width:100%}.ticker span{font-size:.73rem}.section{padding-top:66px}}
 @media(prefers-reduced-motion:reduce){.unicorn-wrap,.cloud,.sky-star,.twinkle,.cta-box:before,.cta-box:after{animation:none!important}.button{transition:none}}
 
+
+/* IMENYSH v4 — fairy story direction */
+.brand-name{font-size:clamp(1.62rem,2.3vw,1.95rem);letter-spacing:-.048em}
+.brand-badge{width:52px;height:52px;font-size:27px;background:linear-gradient(145deg,#fff5d9,#ffe2f1 52%,#eae5ff)}
+.header-inner{min-height:82px}
+.hero h1{max-width:720px}
+.hero-note{gap:9px}
+.hero-note .chip{font-size:.84rem}
+.fairy-divider{display:flex;gap:clamp(20px,6vw,85px);justify-content:center;align-items:center;margin-top:45px;color:#c29cdb;font-size:1.25rem;opacity:.75}
+.divider-cloud{font-size:2.8rem;color:#eadcf6;filter:drop-shadow(0 6px 6px rgba(167,138,195,.18))}
+.love-story{padding:94px 0 62px;position:relative}
+.love-story:before{content:'✦';position:absolute;top:3%;right:9%;color:#d4a9e8;font-size:2rem;animation:float 6s ease-in-out infinite}
+.love-story:after{content:'✧';position:absolute;bottom:3%;left:7%;color:#f1b4ca;font-size:2.7rem;animation:float 7s ease-in-out infinite}
+.storybook{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:46px}
+.storybook-card{min-width:0;position:relative;overflow:hidden;border-radius:35px;padding:215px 28px 28px;min-height:495px;border:2px solid rgba(255,255,255,.94);box-shadow:0 25px 56px rgba(156,121,187,.13);isolation:isolate}
+.story-pink{background:radial-gradient(circle at 50% 10%,#fff 0,transparent 46%),linear-gradient(160deg,#ffe7f0,#fff5f7)}
+.story-lilac{background:radial-gradient(circle at 50% 9%,#fff 0,transparent 45%),linear-gradient(160deg,#ede2ff,#fbf6ff)}
+.story-blue{background:radial-gradient(circle at 50% 9%,#fff 0,transparent 45%),linear-gradient(160deg,#e5efff,#fff8fc)}
+.storybook-card:before{content:'✦';position:absolute;top:38px;left:25px;color:#d1a8e6;font-size:22px;animation:float 6s ease-in-out infinite}
+.storybook-card:after{content:'✧';position:absolute;top:120px;right:28px;color:#e7a6cc;font-size:23px;animation:float 5.5s ease-in-out infinite}
+.story-art{position:absolute;left:50%;top:0;width:235px;height:220px;transform:translateX(-50%);pointer-events:none;animation:story-hover 6s ease-in-out infinite}
+.story-art svg{width:100%;height:100%;overflow:visible;filter:drop-shadow(0 10px 14px rgba(171,131,194,.13))}
+.story-art.rose-unicorn{transform:translateX(-50%) rotate(-8deg);animation-delay:-1s}
+.story-art.lavender-unicorn{transform:translateX(-50%) rotate(6deg);animation-delay:-2.5s}
+.story-art.blue-unicorn{transform:translateX(-50%) rotate(-3deg);animation-delay:-4s}
+.rose-unicorn svg{filter:hue-rotate(-11deg) saturate(1.1) drop-shadow(0 10px 14px rgba(171,131,194,.13))}
+.lavender-unicorn svg{filter:hue-rotate(23deg) saturate(1.1) drop-shadow(0 10px 14px rgba(171,131,194,.13))}
+.blue-unicorn svg{filter:hue-rotate(67deg) saturate(.85) drop-shadow(0 10px 14px rgba(171,131,194,.13))}
+@keyframes story-hover{0%,100%{margin-top:0}50%{margin-top:-12px}}
+.story-step{font-size:.72rem;color:#a475b7;font-weight:800;text-transform:uppercase;letter-spacing:.12em}
+.storybook h3{font-family:'Playfair Display',Georgia,serif;font-size:1.52rem;color:#67466e;line-height:1.28;margin:13px 0 12px;font-weight:600}
+.storybook p{font-size:.94rem;line-height:1.74;color:#806c8b;margin:0 0 18px}
+.story-decoration{font-size:1.08rem;color:#d09bd5;letter-spacing:12px}
+.story-closing{text-align:center;margin:36px auto 0;max-width:670px;color:#8e70a2;font-family:'Playfair Display',Georgia,serif;font-size:1.3rem;line-height:1.6}
+.story-closing span{color:#d0a8de}
+.result-upsell{text-align:center;padding:30px;border-radius:28px;background:linear-gradient(140deg,#fff1f7,#f4eafe,#edf3ff);border:1px solid rgba(183,143,208,.24);display:flex;align-items:center;flex-direction:column;gap:12px}
+.result-upsell h3{font-family:'Playfair Display',Georgia,serif;color:#6d4c85;font-size:2.1rem;margin:0}
+.result-upsell p{line-height:1.65;max-width:510px;color:#79668a;margin:0}
+.result-upsell-sparkle{color:#b88bd0;font-size:1.6rem;letter-spacing:12px}
+.upsell-price{font-size:1.35rem;color:#6d4c85;font-weight:800}.upsell-price span{font-size:.8rem;color:#9481a1;font-weight:500;display:block;margin-top:4px}
+.result-upsell small{color:#9580a1}
+@media(max-width:980px){.storybook{grid-template-columns:1fr;max-width:590px;margin-left:auto;margin-right:auto}.storybook-card{min-height:375px;padding-top:200px}.story-art{width:220px;height:200px}}
+@media(max-width:760px){.brand-name{font-size:1.58rem}.brand-badge{width:45px;height:45px}.love-story{padding:70px 0 40px}.story-closing{font-size:1.12rem}.storybook-card{border-radius:27px}.fairy-divider{margin-top:20px}}
+@media(prefers-reduced-motion:reduce){.story-art,.love-story:after,.love-story:before,.storybook-card:before,.storybook-card:after{animation:none!important}}
+
   </style>
 </head>
 <body>
@@ -430,8 +475,8 @@ body {background:radial-gradient(ellipse at 75% 8%,#e8e1ff 0,transparent 42%),ra
 
       <nav class="nav" aria-label="Навигация по сайту">
         <a href="#how">Как это работает</a>
-        <a href="#phrases">Атмосфера</a>
-        <a href="#pricing">Возможности</a>
+        <a href="#phrases">Имена и чувства</a>
+        <a href="#story">Наша сказка</a>
         <a href="#faq">FAQ</a>
       </nav>
 
@@ -445,8 +490,8 @@ body {background:radial-gradient(ellipse at 75% 8%,#e8e1ff 0,transparent 42%),ra
       <div class="container hero-grid">
         <div>
           <div class="eyebrow"><span class="mini-heart">♡</span> создано для самых любимых</div>
-          <h1>У большой любви<br>есть <em>маленькое имя.</em></h1>
-          <p>Он ещё совсем крошечный. А любви к нему — уже целая вселенная. ♡<br>Давайте найдём имя для вашего маленького чуда.</p>
+          <h1>Для тебя уже есть<br><em>столько любви.</em></h1>
+          <p>Ты ещё не сказал ни слова, а мы уже мечтаем услышать твой смех. ♡<br>Давай найдём имя, которое однажды будем произносить с бесконечной нежностью.</p>
           <div class="hero-actions">
             <button class="button button-primary" id="heroStart">Выбрать имя для малыша ♡</button>
             <a class="button button-soft" href="#how">Как рождается имя ✧</a>
@@ -494,7 +539,7 @@ body {background:radial-gradient(ellipse at 75% 8%,#e8e1ff 0,transparent 42%),ra
             </svg>
           </div>
           <div class="floating-sticker sticker-top">✧ Ты уже так любим, малыш</div>
-          <div class="floating-sticker sticker-bottom">☁️ Совсем маленький. Бесконечно любимый.</div>
+          <div class="floating-sticker sticker-bottom">☁️ Мы уже ждём твоих объятий ♡</div>
           <div class="fairy-footnote">made of love & little dreams ✦</div>
         </div>
       </div>
@@ -504,7 +549,7 @@ body {background:radial-gradient(ellipse at 75% 8%,#e8e1ff 0,transparent 42%),ra
       <span>✦ имя, которое хочется шептать с любовью</span>
       <span>♡ самому дорогому человечку</span>
       <span>☾ персональный подбор для вашей семьи</span>
-      <span>✧ маленькая вселенная любви</span>
+      <span>✧ целая вселенная нежности</span>
     </div>
 
     <section class="section" id="how">
@@ -540,19 +585,23 @@ body {background:radial-gradient(ellipse at 75% 8%,#e8e1ff 0,transparent 42%),ra
       </div>
     </section>
 
+    <div class="fairy-divider container" aria-hidden="true">
+      <span>✧</span><span>✦</span><span class="divider-cloud">☁</span><span>♡</span><span>✦</span><span>✧</span>
+    </div>
+
     <section class="showcase" id="phrases">
       <div class="container showcase-shell">
         <div class="big-card">
-          <div class="eyebrow">✦ милые слова на каждом шаге</div>
-          <h2 class="section-title">Сайт должен не только помогать, но и <em>дарить чувство</em></h2>
+          <div class="eyebrow">♡ слова, которые хочется сохранить</div>
+          <h2 class="section-title">Есть слова, которые хочется <em>шептать малышу</em></h2>
           <p class="section-copy" style="text-align:left; margin:0; max-width:none">
-            Поэтому по всему интерфейсу мы добавили мягкие фразы, которые создают настроение и делают сервис по-настоящему живым.
+            Каждый новый день ожидания — это ещё одна страничка вашей истории. И имя станет самой нежной её строчкой.
           </p>
           <div class="phrase-list">
             <div class="phrase">“Иногда имя находится не сразу — и это тоже <strong>часть волшебства</strong>.”</div>
             <div class="phrase">“Выбирайте не спеша. Самые красивые решения любят <strong>нежность и тишину</strong>.”</div>
             <div class="phrase">“Возможно, ваше имя уже совсем рядом — <strong>осталось только его узнать</strong>.”</div>
-            <div class="phrase">“Маленький человек заслуживает имя, в котором будет <strong>много любви</strong>.”</div>
+            <div class="phrase">“Однажды ты услышишь своё имя — и поймёшь, <strong>как же сильно тебя ждали</strong>.”</div>
           </div>
         </div>
         <div class="big-card name-stack" aria-hidden="true">
@@ -567,7 +616,7 @@ body {background:radial-gradient(ellipse at 75% 8%,#e8e1ff 0,transparent 42%),ra
             <p>Короткое, уверенное, красивое. В нём есть сила и спокойствие.</p>
           </div>
           <div class="sample three">
-            <small>маленькое чудо выбора</small>
+            <small>тёплое чудо выбора</small>
             <h3>София</h3>
             <p>Классика, которую любят за мягкость, благородство и очень тёплое звучание.</p>
           </div>
@@ -575,54 +624,124 @@ body {background:radial-gradient(ellipse at 75% 8%,#e8e1ff 0,transparent 42%),ra
       </div>
     </section>
 
-    <section class="pricing" id="pricing">
+    <section class="love-story" id="story">
       <div class="container">
         <div class="section-head">
-          <div class="eyebrow">♡ возможности сервиса</div>
-          <h2 class="section-title">Начните бесплатно,<br><em>а дальше — если захочется больше</em></h2>
-          <p class="section-copy">Первая версия сайта уже показывает красивый путь пользователя: бесплатное знакомство, результаты и демонстрацию будущего платного доступа.</p>
+          <div class="eyebrow">☾ странички вашей сказки</div>
+          <h2 class="section-title">А пока мы ждём тебя,<br><em>любовь растёт с каждым днём.</em></h2>
+          <p class="section-copy">Сначала — две полосочки. Потом — первое сердцебиение, первые мечты о встрече, знакомый голос сквозь мамин животик. И однажды — самое красивое слово: твоё имя.</p>
         </div>
-
-        <div class="pricing-grid">
-          <div class="price-card">
-            <span class="pill-top">для первого знакомства</span>
-            <h3 class="price-title">Имёныш Free</h3>
-            <div class="price">0 ₽</div>
-            <p>Всё, чтобы мягко начать поиск и увидеть первые совпадения.</p>
-            <ul>
-              <li>Нежный интерактивный тест</li>
-              <li>5 персональных рекомендаций</li>
-              <li>Милые описания и объяснения</li>
-              <li>Избранное на этом устройстве</li>
-            </ul>
-            <button class="button button-outline launch-btn">Попробовать бесплатно ✧</button>
-          </div>
-
-          <div class="price-card featured">
-            <span class="featured-badge">позже ✦</span>
-            <span class="pill-top">больше имён и деталей</span>
-            <h3 class="price-title">Имёныш Plus</h3>
-            <div class="price">399 ₽ <span>/ пример разовой цены</span></div>
-            <p>Концепция будущего платного доступа для более глубокой и красивой подборки.</p>
-            <ul>
-              <li>До 30–50 имён в выдаче</li>
-              <li>Подробные значения и происхождение</li>
-              <li>Учет фамилии и отчества</li>
-              <li>PDF-памятка с результатами</li>
-            </ul>
-            <button class="button button-disabled" disabled>Оплата будет подключена позже</button>
-          </div>
+        <div class="storybook">
+          <article class="storybook-card story-pink">
+            <div class="story-art mini-unicorn rose-unicorn" aria-hidden="true"><svg class="unicorn" viewBox="0 0 460 440" role="img" aria-label="Милый спящий единорог с пастельной гривой и золотым рогом" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="mane1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffc9df"/><stop offset=".5" stop-color="#d7b9fa"/><stop offset="1" stop-color="#aee8f6"/></linearGradient>
+                <linearGradient id="horn1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff2bf"/><stop offset="1" stop-color="#f8c879"/></linearGradient>
+                <filter id="fluffyShadow1" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="18" stdDeviation="13" flood-color="#9976b8" flood-opacity=".18"/></filter>
+              </defs>
+              <ellipse cx="228" cy="368" rx="155" ry="26" fill="#aa91cc" opacity=".09"/>
+              <g filter="url(#fluffyShadow1)">
+                <path d="M153 226C113 200 91 244 113 268C88 283 95 322 126 332C121 374 172 391 198 364C240 401 300 378 300 331C353 328 366 269 324 239C332 182 281 161 248 181C206 151 160 172 153 226Z" fill="url(#mane1)"/>
+                <ellipse cx="225" cy="289" rx="111" ry="93" fill="#fffdfd"/>
+                <ellipse cx="201" cy="356" rx="34" ry="27" fill="#fffdfd"/><ellipse cx="264" cy="354" rx="34" ry="27" fill="#fffdfd"/>
+                <path d="M182 213C144 186 143 151 170 146C193 142 211 167 208 212Z" fill="#fffdfd"/>
+                <path d="M190 208C170 177 166 162 177 162C193 161 201 187 199 209Z" fill="#f7cfe0"/>
+                <path d="M264 211C282 160 315 142 333 159C352 181 323 214 287 227Z" fill="#fffdfd"/>
+                <path d="M282 207C305 174 319 170 326 178C336 190 306 213 287 217Z" fill="#f7cfe0"/>
+                <path d="M228 208L263 82L292 218Z" fill="url(#horn1)" stroke="#f0cd90" stroke-width="4"/>
+                <path d="M243 161L279 162M237 184L287 186" stroke="#e6b977" stroke-width="4" stroke-linecap="round" opacity=".65"/>
+                <path d="M127 242C116 183 175 160 203 194C214 172 249 167 267 195C298 175 330 195 325 229C308 219 298 224 290 240C271 219 244 222 230 235C218 220 199 220 188 237C169 219 147 224 127 242Z" fill="url(#mane1)"/>
+                <path d="M155 280Q176 299 196 279M260 279Q280 299 300 280" fill="none" stroke="#6c566b" stroke-width="7" stroke-linecap="round"/>
+                <path d="M165 290L161 297M186 290L190 297M270 292L266 299M292 291L297 299" stroke="#6c566b" stroke-width="3.5" stroke-linecap="round"/>
+                <ellipse cx="154" cy="311" rx="20" ry="12" fill="#ffb5c9" opacity=".52"/><ellipse cx="301" cy="311" rx="20" ry="12" fill="#ffb5c9" opacity=".52"/>
+                <path d="M226 307Q237 321 249 307" fill="none" stroke="#aa778e" stroke-width="4" stroke-linecap="round"/>
+                <path d="M128 252C117 298 145 343 165 359" fill="none" stroke="#f5b0d8" stroke-width="17" stroke-linecap="round" opacity=".65"/>
+              </g>
+              <path d="M80 352C64 320 99 292 129 312C144 278 198 284 208 317C240 295 279 303 294 332C336 311 381 346 365 373C346 395 118 395 94 381C85 376 79 364 80 352Z" fill="#fff" opacity=".98" filter="url(#fluffyShadow1)"/>
+              <path d="M135 360Q164 374 196 361M256 361Q294 376 327 359" fill="none" stroke="#eee3fa" stroke-width="5" stroke-linecap="round"/>
+            </svg></div>
+            <span class="story-step">01 · начало чудес</span>
+            <h3>«Кажется, нас стало больше…»</h3>
+            <p>В сердце появляется место для кого-то, кого вы ещё не обнимали, но уже любите всем существом.</p>
+            <span class="story-decoration">♡ ✧ ♡</span>
+          </article>
+          <article class="storybook-card story-lilac">
+            <div class="story-art mini-unicorn lavender-unicorn" aria-hidden="true"><svg class="unicorn" viewBox="0 0 460 440" role="img" aria-label="Милый спящий единорог с пастельной гривой и золотым рогом" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="mane2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffc9df"/><stop offset=".5" stop-color="#d7b9fa"/><stop offset="1" stop-color="#aee8f6"/></linearGradient>
+                <linearGradient id="horn2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff2bf"/><stop offset="1" stop-color="#f8c879"/></linearGradient>
+                <filter id="fluffyShadow2" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="18" stdDeviation="13" flood-color="#9976b8" flood-opacity=".18"/></filter>
+              </defs>
+              <ellipse cx="228" cy="368" rx="155" ry="26" fill="#aa91cc" opacity=".09"/>
+              <g filter="url(#fluffyShadow2)">
+                <path d="M153 226C113 200 91 244 113 268C88 283 95 322 126 332C121 374 172 391 198 364C240 401 300 378 300 331C353 328 366 269 324 239C332 182 281 161 248 181C206 151 160 172 153 226Z" fill="url(#mane2)"/>
+                <ellipse cx="225" cy="289" rx="111" ry="93" fill="#fffdfd"/>
+                <ellipse cx="201" cy="356" rx="34" ry="27" fill="#fffdfd"/><ellipse cx="264" cy="354" rx="34" ry="27" fill="#fffdfd"/>
+                <path d="M182 213C144 186 143 151 170 146C193 142 211 167 208 212Z" fill="#fffdfd"/>
+                <path d="M190 208C170 177 166 162 177 162C193 161 201 187 199 209Z" fill="#f7cfe0"/>
+                <path d="M264 211C282 160 315 142 333 159C352 181 323 214 287 227Z" fill="#fffdfd"/>
+                <path d="M282 207C305 174 319 170 326 178C336 190 306 213 287 217Z" fill="#f7cfe0"/>
+                <path d="M228 208L263 82L292 218Z" fill="url(#horn2)" stroke="#f0cd90" stroke-width="4"/>
+                <path d="M243 161L279 162M237 184L287 186" stroke="#e6b977" stroke-width="4" stroke-linecap="round" opacity=".65"/>
+                <path d="M127 242C116 183 175 160 203 194C214 172 249 167 267 195C298 175 330 195 325 229C308 219 298 224 290 240C271 219 244 222 230 235C218 220 199 220 188 237C169 219 147 224 127 242Z" fill="url(#mane2)"/>
+                <path d="M155 280Q176 299 196 279M260 279Q280 299 300 280" fill="none" stroke="#6c566b" stroke-width="7" stroke-linecap="round"/>
+                <path d="M165 290L161 297M186 290L190 297M270 292L266 299M292 291L297 299" stroke="#6c566b" stroke-width="3.5" stroke-linecap="round"/>
+                <ellipse cx="154" cy="311" rx="20" ry="12" fill="#ffb5c9" opacity=".52"/><ellipse cx="301" cy="311" rx="20" ry="12" fill="#ffb5c9" opacity=".52"/>
+                <path d="M226 307Q237 321 249 307" fill="none" stroke="#aa778e" stroke-width="4" stroke-linecap="round"/>
+                <path d="M128 252C117 298 145 343 165 359" fill="none" stroke="#f5b0d8" stroke-width="17" stroke-linecap="round" opacity=".65"/>
+              </g>
+              <path d="M80 352C64 320 99 292 129 312C144 278 198 284 208 317C240 295 279 303 294 332C336 311 381 346 365 373C346 395 118 395 94 381C85 376 79 364 80 352Z" fill="#fff" opacity=".98" filter="url(#fluffyShadow2)"/>
+              <path d="M135 360Q164 374 196 361M256 361Q294 376 327 359" fill="none" stroke="#eee3fa" stroke-width="5" stroke-linecap="round"/>
+            </svg></div>
+            <span class="story-step">02 · в ожидании встречи</span>
+            <h3>«Интересно, каким будет твой смех?»</h3>
+            <p>Вы представляете крошечные пальчики, сонные объятия и как однажды позовёте малыша по имени.</p>
+            <span class="story-decoration">✦ ☾ ✦</span>
+          </article>
+          <article class="storybook-card story-blue">
+            <div class="story-art mini-unicorn blue-unicorn" aria-hidden="true"><svg class="unicorn" viewBox="0 0 460 440" role="img" aria-label="Милый спящий единорог с пастельной гривой и золотым рогом" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="mane3" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffc9df"/><stop offset=".5" stop-color="#d7b9fa"/><stop offset="1" stop-color="#aee8f6"/></linearGradient>
+                <linearGradient id="horn3" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff2bf"/><stop offset="1" stop-color="#f8c879"/></linearGradient>
+                <filter id="fluffyShadow3" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="18" stdDeviation="13" flood-color="#9976b8" flood-opacity=".18"/></filter>
+              </defs>
+              <ellipse cx="228" cy="368" rx="155" ry="26" fill="#aa91cc" opacity=".09"/>
+              <g filter="url(#fluffyShadow3)">
+                <path d="M153 226C113 200 91 244 113 268C88 283 95 322 126 332C121 374 172 391 198 364C240 401 300 378 300 331C353 328 366 269 324 239C332 182 281 161 248 181C206 151 160 172 153 226Z" fill="url(#mane3)"/>
+                <ellipse cx="225" cy="289" rx="111" ry="93" fill="#fffdfd"/>
+                <ellipse cx="201" cy="356" rx="34" ry="27" fill="#fffdfd"/><ellipse cx="264" cy="354" rx="34" ry="27" fill="#fffdfd"/>
+                <path d="M182 213C144 186 143 151 170 146C193 142 211 167 208 212Z" fill="#fffdfd"/>
+                <path d="M190 208C170 177 166 162 177 162C193 161 201 187 199 209Z" fill="#f7cfe0"/>
+                <path d="M264 211C282 160 315 142 333 159C352 181 323 214 287 227Z" fill="#fffdfd"/>
+                <path d="M282 207C305 174 319 170 326 178C336 190 306 213 287 217Z" fill="#f7cfe0"/>
+                <path d="M228 208L263 82L292 218Z" fill="url(#horn3)" stroke="#f0cd90" stroke-width="4"/>
+                <path d="M243 161L279 162M237 184L287 186" stroke="#e6b977" stroke-width="4" stroke-linecap="round" opacity=".65"/>
+                <path d="M127 242C116 183 175 160 203 194C214 172 249 167 267 195C298 175 330 195 325 229C308 219 298 224 290 240C271 219 244 222 230 235C218 220 199 220 188 237C169 219 147 224 127 242Z" fill="url(#mane3)"/>
+                <path d="M155 280Q176 299 196 279M260 279Q280 299 300 280" fill="none" stroke="#6c566b" stroke-width="7" stroke-linecap="round"/>
+                <path d="M165 290L161 297M186 290L190 297M270 292L266 299M292 291L297 299" stroke="#6c566b" stroke-width="3.5" stroke-linecap="round"/>
+                <ellipse cx="154" cy="311" rx="20" ry="12" fill="#ffb5c9" opacity=".52"/><ellipse cx="301" cy="311" rx="20" ry="12" fill="#ffb5c9" opacity=".52"/>
+                <path d="M226 307Q237 321 249 307" fill="none" stroke="#aa778e" stroke-width="4" stroke-linecap="round"/>
+                <path d="M128 252C117 298 145 343 165 359" fill="none" stroke="#f5b0d8" stroke-width="17" stroke-linecap="round" opacity=".65"/>
+              </g>
+              <path d="M80 352C64 320 99 292 129 312C144 278 198 284 208 317C240 295 279 303 294 332C336 311 381 346 365 373C346 395 118 395 94 381C85 376 79 364 80 352Z" fill="#fff" opacity=".98" filter="url(#fluffyShadow3)"/>
+              <path d="M135 360Q164 374 196 361M256 361Q294 376 327 359" fill="none" stroke="#eee3fa" stroke-width="5" stroke-linecap="round"/>
+            </svg></div>
+            <span class="story-step">03 · навсегда в сердце</span>
+            <h3>«Мы уже придумали, как тебя любить»</h3>
+            <p>Имя будет звучать в колыбельных, в первых поздравлениях и в самых счастливых семейных воспоминаниях.</p>
+            <span class="story-decoration">✧ ♡ ✧</span>
+          </article>
         </div>
-        <p class="disclaimer">Сейчас это красивая демонстрация продукта: реальные платежи пока не подключены.</p>
+        <div class="story-closing"><span>✧</span> Не нужно торопиться. Имя, которое согреет ваше сердце, обязательно найдётся. <span>✧</span></div>
       </div>
     </section>
 
     <section class="cta-band">
       <div class="container">
         <div class="cta-box">
-          <div class="eyebrow">☾ начнём маленькое путешествие?</div>
-          <h2 class="cta-title">Возможно, ваше имя уже <em>ждёт вас</em></h2>
-          <p class="cta-copy">Несколько минут, красивые вопросы и подборка имён, которые могут стать началом самой важной истории.</p>
+          <div class="eyebrow">☾ начнём нашу сказку?</div>
+          <h2 class="cta-title">Имя, которым вы позовёте <em>свою любовь</em></h2>
+          <p class="cta-copy">Пусть поиск имени станет ещё одним счастливым воспоминанием о времени, когда вы так нежно ждали встречи.</p>
           <button class="button button-primary launch-btn">Найти имя для малыша ✦</button>
         </div>
       </div>
@@ -647,8 +766,8 @@ body {background:radial-gradient(ellipse at 75% 8%,#e8e1ff 0,transparent 42%),ra
           </article>
           <article class="card">
             <div class="mini-badge">☾</div>
-            <h3>Можно будет подключить оплату?</h3>
-            <p>Да. В дизайн уже заложен раздел Plus, а позже можно интегрировать российскую платёжную систему и закрывать расширенные результаты после оплаты.</p>
+            <h3>Что будет после подбора?</h3>
+            <p>Вы увидите первые подходящие имена и сможете сохранить понравившиеся. В конце результатов есть предварительный просмотр будущих дополнительных возможностей.</p>
           </article>
         </div>
       </div>
@@ -813,9 +932,9 @@ body {background:radial-gradient(ellipse at 75% 8%,#e8e1ff 0,transparent 42%),ra
 
     const romanticPhrases = [
       'Выбирайте сердцем ♡',
-      'Маленькая магия уже начинается ✦',
+      'Наше волшебство уже начинается ✦',
       'Иногда самое красивое имя приходит тихо ☾',
-      'Почти как маленькая сказка ✧',
+      'Почти как добрая сказка ✧',
       'Любовь уже знает твоё имя, малыш ♡',
       'Каждый ответ делает подбор нежнее ✦'
     ];
@@ -842,7 +961,6 @@ body {background:radial-gradient(ellipse at 75% 8%,#e8e1ff 0,transparent 42%),ra
     document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click', ()=>header.classList.remove('menu-open')));
 
     launchers.forEach(btn => btn.addEventListener('click', openFlow));
-    document.getElementById('headerStart').addEventListener('click', openFlow);
     closeFlow.addEventListener('click', closeFlowModal);
     backBtn.addEventListener('click', handleBack);
     nextBtn.addEventListener('click', handleNext);
@@ -962,6 +1080,15 @@ body {background:radial-gradient(ellipse at 75% 8%,#e8e1ff 0,transparent 42%),ra
             ${free.map((item, idx)=>resultCard(item, idx + 1)).join('')}
             ${locked.length ? `<div class="locked">${locked.map((item, idx)=>resultCard(item, idx + 6)).join('')}</div>` : ''}
           </div>
+          <section class="result-upsell" aria-label="Будущие возможности Имёныш Plus">
+            <div class="result-upsell-sparkle" aria-hidden="true">✦ ☾ ♡</div>
+            <div class="eyebrow">ещё немного волшебства</div>
+            <h3>Имёныш Plus</h3>
+            <p>Однажды здесь появятся расширенная подборка, красивые истории имён и именная книжечка на память.</p>
+            <div class="upsell-price">399 ₽ <span>планируемая разовая цена</span></div>
+            <button class="button button-disabled" disabled>Пока готовим волшебство ♡</button>
+            <small>Демонстрация будущей функции. Оплата сейчас недоступна.</small>
+          </section>
         </div>
       `;
 

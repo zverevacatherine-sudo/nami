@@ -457,6 +457,43 @@ body {background:radial-gradient(ellipse at 75% 8%,#e8e1ff 0,transparent 42%),ra
 @media(max-width:760px){.brand-name{font-size:1.58rem}.brand-badge{width:45px;height:45px}.love-story{padding:70px 0 40px}.story-closing{font-size:1.12rem}.storybook-card{border-radius:27px}.fairy-divider{margin-top:20px}}
 @media(prefers-reduced-motion:reduce){.story-art,.love-story:after,.love-story:before,.storybook-card:before,.storybook-card:after{animation:none!important}}
 
+
+/* IMENYSH v5 • cloud friends art direction */
+.brand-name{font-size:clamp(1.85rem,2.7vw,2.2rem);font-family:'Playfair Display',Georgia,serif;font-weight:700;letter-spacing:-.065em;color:#80599b}
+.brand-name .dot{font-size:.64em;margin-left:2px;vertical-align:top;color:#e1a1c6}
+.hero h1{font-size:clamp(2.8rem,5.1vw,5.4rem);line-height:1.17;letter-spacing:-.048em;max-width:820px}
+.hero p{max-width:540px;line-height:1.8;font-size:1.11rem}
+.button-primary{background:linear-gradient(112deg,#d999d8 0%,#bda2f5 52%,#f4b5ce 100%);border:2px solid rgba(255,255,255,.72);box-shadow:0 14px 30px #bba1d565,inset 0 2px 3px #ffffff70}
+.button-primary:hover{box-shadow:0 20px 40px #bba1d585,inset 0 2px 3px #ffffff80}
+.sky-star{font-size:30px;filter:drop-shadow(0 0 9px #ffffff)}
+.storybook-card:nth-child(1) .story-art{animation:sky-flight 6s ease-in-out infinite;transform-origin:52% 50%}
+.storybook-card:nth-child(1) .story-art svg{transform:rotate(-24deg) scale(.88) translateY(-13px)}
+.storybook-card:nth-child(2) .story-art{animation:sit-bob 6s ease-in-out infinite;transform-origin:center bottom}
+.storybook-card:nth-child(2) .story-art svg{transform:scale(.84) translateY(17px)}
+.storybook-card:nth-child(3) .story-art{animation:story-hover 7s ease-in-out infinite;transform-origin:center bottom}
+.storybook-card:nth-child(3) .story-art svg{transform:rotate(9deg) scale(.94)}
+@keyframes sky-flight{0%,100%{margin-top:4px;rotate:-7deg}50%{margin-top:-24px;rotate:4deg}}
+@keyframes sit-bob{0%,100%{margin-top:12px}50%{margin-top:5px}}
+.mascot-parade{max-width:1100px;margin:75px auto 0;padding:0 22px;position:relative;z-index:3}
+.mascot-text{text-align:center;font:600 clamp(1.5rem,3vw,2.1rem)/1.3 'Playfair Display',Georgia,serif;color:#7b5796}
+.mascot-text small{display:block;font:500 .93rem/1.5 'Inter',sans-serif;color:#9984aa;margin-top:9px}
+.mascot-friends{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:21px;margin-top:28px}
+.friend{min-height:264px;text-align:center;position:relative;border-radius:34px;padding:20px 14px;background:radial-gradient(circle at 50% 27%,#fffdfc,#fbecfa 70%);border:1px solid white;box-shadow:0 18px 40px #b99fd225;overflow:hidden}
+.friend:nth-child(2){background:radial-gradient(circle at 50% 27%,#fffdfb,#eeeafa 75%)}
+.friend:nth-child(3){background:radial-gradient(circle at 50% 27%,#fffdfb,#eaf3ff 75%)}
+.friend-body{display:block;font-size:86px;line-height:1.4;filter:drop-shadow(0 12px 8px #bda6d040);position:relative;z-index:2}
+.friend-cloud{position:absolute;font-size:150px;top:43px;left:50%;transform:translateX(-50%);opacity:.43;filter:blur(2px)}
+.friend-emblem{position:absolute;top:21px;right:27px;font-size:24px;color:#d499d5}
+.friend p{font:600 1rem/1.5 'Inter',sans-serif;color:#866b9b;max-width:190px;margin:3px auto}
+.friend-flying .friend-body{animation:flyfriend 5s ease-in-out infinite;transform:rotate(-15deg)}
+.friend-sitting .friend-body{animation:sitfriend 6s ease-in-out infinite}
+.friend-sleeping .friend-body{transform:rotate(18deg) scale(.9);animation:sleepfriend 7s ease-in-out infinite}
+@keyframes flyfriend{50%{transform:translate(14px,-16px) rotate(-23deg)}}
+@keyframes sitfriend{50%{transform:translateY(-6px)}}
+@keyframes sleepfriend{50%{transform:rotate(15deg) scale(.94)}}
+@media(max-width:760px){.hero h1{font-size:clamp(2.5rem,9.7vw,3.8rem)}.brand-name{font-size:1.72rem}.mascot-friends{grid-template-columns:1fr;gap:14px}.friend{min-height:235px}.mascot-parade{margin-top:38px}.story-art{max-width:100%}}
+@media(prefers-reduced-motion:reduce){.friend-body,.storybook-card .story-art{animation:none!important}}
+
   </style>
 </head>
 <body>
@@ -469,8 +506,8 @@ body {background:radial-gradient(ellipse at 75% 8%,#e8e1ff 0,transparent 42%),ra
   <header class="site-header" id="header">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="Имёныш — на главную">
-        <span class="brand-badge">☾</span>
-        <span class="brand-name">имёныш<span class="dot">.</span></span>
+        <span class="brand-badge">✦</span>
+        <span class="brand-name">Имёныш<span class="dot">♡</span></span>
       </a>
 
       <nav class="nav" aria-label="Навигация по сайту">
@@ -490,16 +527,16 @@ body {background:radial-gradient(ellipse at 75% 8%,#e8e1ff 0,transparent 42%),ra
       <div class="container hero-grid">
         <div>
           <div class="eyebrow"><span class="mini-heart">♡</span> создано для самых любимых</div>
-          <h1>Для тебя уже есть<br><em>столько любви.</em></h1>
-          <p>Ты ещё не сказал ни слова, а мы уже мечтаем услышать твой смех. ♡<br>Давай найдём имя, которое однажды будем произносить с бесконечной нежностью.</p>
+          <h1>Мы ещё не обняли тебя.<br><em>А уже любим сильнее всего.</em></h1>
+          <p>Мы ещё не знаем цвет твоих глаз. Не слышали твой смех. Но уже представляем, как будем шептать твоё имя перед сном. ♡</p>
           <div class="hero-actions">
-            <button class="button button-primary" id="heroStart">Выбрать имя для малыша ♡</button>
+            <button class="button button-primary" id="heroStart">Найти имя для нашего чуда ♡</button>
             <a class="button button-soft" href="#how">Как рождается имя ✧</a>
           </div>
           <div class="hero-note">
-            <span class="chip"><span>☁</span> с любовью к каждому имени</span>
+            <span class="chip"><span>☁</span> для самых любимых малышей</span>
             <span class="chip"><span>✧</span> чуть-чуть волшебства</span>
-            <span class="chip"><span>☾</span> имена для вашего чуда</span>
+            <span class="chip"><span>☾</span> нежность в каждой букве</span>
           </div>
         </div>
 
@@ -540,13 +577,13 @@ body {background:radial-gradient(ellipse at 75% 8%,#e8e1ff 0,transparent 42%),ra
           </div>
           <div class="floating-sticker sticker-top">✧ Ты уже так любим, малыш</div>
           <div class="floating-sticker sticker-bottom">☁️ Мы уже ждём твоих объятий ♡</div>
-          <div class="fairy-footnote">made of love & little dreams ✦</div>
+          <div class="fairy-footnote">имёныш — там, где живёт нежность ✦</div>
         </div>
       </div>
     </section>
 
     <div class="ticker">
-      <span>✦ имя, которое хочется шептать с любовью</span>
+      <span>✦ первое слово вашей семейной сказки</span>
       <span>♡ самому дорогому человечку</span>
       <span>☾ персональный подбор для вашей семьи</span>
       <span>✧ целая вселенная нежности</span>
@@ -556,7 +593,7 @@ body {background:radial-gradient(ellipse at 75% 8%,#e8e1ff 0,transparent 42%),ra
       <div class="container">
         <div class="section-head">
           <div class="eyebrow">✧ как это работает</div>
-          <h2 class="section-title">От первой мечты —<br><em>до самого любимого имени</em></h2>
+          <h2 class="section-title">Как будто странички<br><em>самой нежной сказки</em></h2>
           <p class="section-copy">
             Мы сделали процесс поиска имени по-настоящему красивым: без скуки, без тяжёлых списков, с нежностью к деталям и приятным чувством, что сайт понимает вас.
           </p>
@@ -595,7 +632,7 @@ body {background:radial-gradient(ellipse at 75% 8%,#e8e1ff 0,transparent 42%),ra
           <div class="eyebrow">♡ слова, которые хочется сохранить</div>
           <h2 class="section-title">Есть слова, которые хочется <em>шептать малышу</em></h2>
           <p class="section-copy" style="text-align:left; margin:0; max-width:none">
-            Каждый новый день ожидания — это ещё одна страничка вашей истории. И имя станет самой нежной её строчкой.
+            Однажды вы произнесёте его вслух — и оно навсегда станет самым родным звуком на свете.
           </p>
           <div class="phrase-list">
             <div class="phrase">“Иногда имя находится не сразу — и это тоже <strong>часть волшебства</strong>.”</div>
@@ -624,40 +661,48 @@ body {background:radial-gradient(ellipse at 75% 8%,#e8e1ff 0,transparent 42%),ra
       </div>
     </section>
 
+    <div class="mascot-parade" aria-label="Сказочные друзья Имёныша">
+  <div class="mascot-text">✦ Познакомьтесь с нашими облачными друзьями ✦<small>Они берегут самые нежные мечты о вашей встрече</small></div>
+  <div class="mascot-friends">
+    <div class="friend friend-flying" aria-label="Единорог летит среди звёзд"><span class="friend-emblem">✧</span><span class="friend-body">🦄</span><span class="friend-cloud">☁</span><p>Луна любит летать выше облаков</p></div>
+    <div class="friend friend-sitting" aria-label="Единорог сидит на облаке"><span class="friend-emblem">♡</span><span class="friend-body">🦄</span><span class="friend-cloud">☁</span><p>Плюша собирает добрые желания</p></div>
+    <div class="friend friend-sleeping" aria-label="Единорог отдыхает"><span class="friend-emblem">✦</span><span class="friend-body">🦄</span><span class="friend-cloud">☁</span><p>Зефирка охраняет сладкие сны</p></div>
+  </div>
+</div>
     <section class="love-story" id="story">
       <div class="container">
         <div class="section-head">
           <div class="eyebrow">☾ странички вашей сказки</div>
-          <h2 class="section-title">А пока мы ждём тебя,<br><em>любовь растёт с каждым днём.</em></h2>
-          <p class="section-copy">Сначала — две полосочки. Потом — первое сердцебиение, первые мечты о встрече, знакомый голос сквозь мамин животик. И однажды — самое красивое слово: твоё имя.</p>
+          <h2 class="section-title">Пока ты растёшь под сердцем,<br><em>мы растим для тебя целую вселенную любви.</em></h2>
+          <p class="section-copy">Первый снимок. Первое сердцебиение. Первая крошечная пяточка, которую так хочется поцеловать. И имя, которое скоро будет звучать дома каждый день.</p>
         </div>
         <div class="storybook">
           <article class="storybook-card story-pink">
-            <div class="story-art mini-unicorn rose-unicorn" aria-hidden="true"><svg class="unicorn" viewBox="0 0 460 440" role="img" aria-label="Милый спящий единорог с пастельной гривой и золотым рогом" xmlns="http://www.w3.org/2000/svg">
+            <div class="story-art mini-unicorn rose-unicorn" aria-hidden="true"><svg class="unicorn unicorn-flying" viewBox="0 0 460 440" role="img" aria-label="Летающий единорожка" xmlns="http://www.w3.org/2000/svg">
               <defs>
-                <linearGradient id="mane1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffc9df"/><stop offset=".5" stop-color="#d7b9fa"/><stop offset="1" stop-color="#aee8f6"/></linearGradient>
-                <linearGradient id="horn1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff2bf"/><stop offset="1" stop-color="#f8c879"/></linearGradient>
-                <filter id="fluffyShadow1" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="18" stdDeviation="13" flood-color="#9976b8" flood-opacity=".18"/></filter>
+                <linearGradient id="manePose1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffc9df"/><stop offset=".5" stop-color="#d7b9fa"/><stop offset="1" stop-color="#aee8f6"/></linearGradient>
+                <linearGradient id="hornPose1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff2bf"/><stop offset="1" stop-color="#f8c879"/></linearGradient>
+                <filter id="fluffyShadowPose1" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="18" stdDeviation="13" flood-color="#9976b8" flood-opacity=".18"/></filter>
               </defs>
               <ellipse cx="228" cy="368" rx="155" ry="26" fill="#aa91cc" opacity=".09"/>
-              <g filter="url(#fluffyShadow1)">
-                <path d="M153 226C113 200 91 244 113 268C88 283 95 322 126 332C121 374 172 391 198 364C240 401 300 378 300 331C353 328 366 269 324 239C332 182 281 161 248 181C206 151 160 172 153 226Z" fill="url(#mane1)"/>
+              <g filter="url(#fluffyShadowPose1)">
+                <path d="M153 226C113 200 91 244 113 268C88 283 95 322 126 332C121 374 172 391 198 364C240 401 300 378 300 331C353 328 366 269 324 239C332 182 281 161 248 181C206 151 160 172 153 226Z" fill="url(#manePose1)"/>
                 <ellipse cx="225" cy="289" rx="111" ry="93" fill="#fffdfd"/>
                 <ellipse cx="201" cy="356" rx="34" ry="27" fill="#fffdfd"/><ellipse cx="264" cy="354" rx="34" ry="27" fill="#fffdfd"/>
                 <path d="M182 213C144 186 143 151 170 146C193 142 211 167 208 212Z" fill="#fffdfd"/>
                 <path d="M190 208C170 177 166 162 177 162C193 161 201 187 199 209Z" fill="#f7cfe0"/>
                 <path d="M264 211C282 160 315 142 333 159C352 181 323 214 287 227Z" fill="#fffdfd"/>
                 <path d="M282 207C305 174 319 170 326 178C336 190 306 213 287 217Z" fill="#f7cfe0"/>
-                <path d="M228 208L263 82L292 218Z" fill="url(#horn1)" stroke="#f0cd90" stroke-width="4"/>
+                <path d="M228 208L263 82L292 218Z" fill="url(#hornPose1)" stroke="#f0cd90" stroke-width="4"/>
                 <path d="M243 161L279 162M237 184L287 186" stroke="#e6b977" stroke-width="4" stroke-linecap="round" opacity=".65"/>
-                <path d="M127 242C116 183 175 160 203 194C214 172 249 167 267 195C298 175 330 195 325 229C308 219 298 224 290 240C271 219 244 222 230 235C218 220 199 220 188 237C169 219 147 224 127 242Z" fill="url(#mane1)"/>
+                <path d="M127 242C116 183 175 160 203 194C214 172 249 167 267 195C298 175 330 195 325 229C308 219 298 224 290 240C271 219 244 222 230 235C218 220 199 220 188 237C169 219 147 224 127 242Z" fill="url(#manePose1)"/>
                 <path d="M155 280Q176 299 196 279M260 279Q280 299 300 280" fill="none" stroke="#6c566b" stroke-width="7" stroke-linecap="round"/>
                 <path d="M165 290L161 297M186 290L190 297M270 292L266 299M292 291L297 299" stroke="#6c566b" stroke-width="3.5" stroke-linecap="round"/>
                 <ellipse cx="154" cy="311" rx="20" ry="12" fill="#ffb5c9" opacity=".52"/><ellipse cx="301" cy="311" rx="20" ry="12" fill="#ffb5c9" opacity=".52"/>
                 <path d="M226 307Q237 321 249 307" fill="none" stroke="#aa778e" stroke-width="4" stroke-linecap="round"/>
                 <path d="M128 252C117 298 145 343 165 359" fill="none" stroke="#f5b0d8" stroke-width="17" stroke-linecap="round" opacity=".65"/>
               </g>
-              <path d="M80 352C64 320 99 292 129 312C144 278 198 284 208 317C240 295 279 303 294 332C336 311 381 346 365 373C346 395 118 395 94 381C85 376 79 364 80 352Z" fill="#fff" opacity=".98" filter="url(#fluffyShadow1)"/>
+              <path d="M80 352C64 320 99 292 129 312C144 278 198 284 208 317C240 295 279 303 294 332C336 311 381 346 365 373C346 395 118 395 94 381C85 376 79 364 80 352Z" fill="#fff" opacity=".98" filter="url(#fluffyShadowPose1)"/>
               <path d="M135 360Q164 374 196 361M256 361Q294 376 327 359" fill="none" stroke="#eee3fa" stroke-width="5" stroke-linecap="round"/>
             </svg></div>
             <span class="story-step">01 · начало чудес</span>
@@ -666,31 +711,31 @@ body {background:radial-gradient(ellipse at 75% 8%,#e8e1ff 0,transparent 42%),ra
             <span class="story-decoration">♡ ✧ ♡</span>
           </article>
           <article class="storybook-card story-lilac">
-            <div class="story-art mini-unicorn lavender-unicorn" aria-hidden="true"><svg class="unicorn" viewBox="0 0 460 440" role="img" aria-label="Милый спящий единорог с пастельной гривой и золотым рогом" xmlns="http://www.w3.org/2000/svg">
+            <div class="story-art mini-unicorn lavender-unicorn" aria-hidden="true"><svg class="unicorn unicorn-sitting" viewBox="0 0 460 440" role="img" aria-label="Сидящий единорожка" xmlns="http://www.w3.org/2000/svg">
               <defs>
-                <linearGradient id="mane2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffc9df"/><stop offset=".5" stop-color="#d7b9fa"/><stop offset="1" stop-color="#aee8f6"/></linearGradient>
-                <linearGradient id="horn2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff2bf"/><stop offset="1" stop-color="#f8c879"/></linearGradient>
-                <filter id="fluffyShadow2" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="18" stdDeviation="13" flood-color="#9976b8" flood-opacity=".18"/></filter>
+                <linearGradient id="manePose2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffc9df"/><stop offset=".5" stop-color="#d7b9fa"/><stop offset="1" stop-color="#aee8f6"/></linearGradient>
+                <linearGradient id="hornPose2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff2bf"/><stop offset="1" stop-color="#f8c879"/></linearGradient>
+                <filter id="fluffyShadowPose2" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="18" stdDeviation="13" flood-color="#9976b8" flood-opacity=".18"/></filter>
               </defs>
               <ellipse cx="228" cy="368" rx="155" ry="26" fill="#aa91cc" opacity=".09"/>
-              <g filter="url(#fluffyShadow2)">
-                <path d="M153 226C113 200 91 244 113 268C88 283 95 322 126 332C121 374 172 391 198 364C240 401 300 378 300 331C353 328 366 269 324 239C332 182 281 161 248 181C206 151 160 172 153 226Z" fill="url(#mane2)"/>
+              <g filter="url(#fluffyShadowPose2)">
+                <path d="M153 226C113 200 91 244 113 268C88 283 95 322 126 332C121 374 172 391 198 364C240 401 300 378 300 331C353 328 366 269 324 239C332 182 281 161 248 181C206 151 160 172 153 226Z" fill="url(#manePose2)"/>
                 <ellipse cx="225" cy="289" rx="111" ry="93" fill="#fffdfd"/>
                 <ellipse cx="201" cy="356" rx="34" ry="27" fill="#fffdfd"/><ellipse cx="264" cy="354" rx="34" ry="27" fill="#fffdfd"/>
                 <path d="M182 213C144 186 143 151 170 146C193 142 211 167 208 212Z" fill="#fffdfd"/>
                 <path d="M190 208C170 177 166 162 177 162C193 161 201 187 199 209Z" fill="#f7cfe0"/>
                 <path d="M264 211C282 160 315 142 333 159C352 181 323 214 287 227Z" fill="#fffdfd"/>
                 <path d="M282 207C305 174 319 170 326 178C336 190 306 213 287 217Z" fill="#f7cfe0"/>
-                <path d="M228 208L263 82L292 218Z" fill="url(#horn2)" stroke="#f0cd90" stroke-width="4"/>
+                <path d="M228 208L263 82L292 218Z" fill="url(#hornPose2)" stroke="#f0cd90" stroke-width="4"/>
                 <path d="M243 161L279 162M237 184L287 186" stroke="#e6b977" stroke-width="4" stroke-linecap="round" opacity=".65"/>
-                <path d="M127 242C116 183 175 160 203 194C214 172 249 167 267 195C298 175 330 195 325 229C308 219 298 224 290 240C271 219 244 222 230 235C218 220 199 220 188 237C169 219 147 224 127 242Z" fill="url(#mane2)"/>
+                <path d="M127 242C116 183 175 160 203 194C214 172 249 167 267 195C298 175 330 195 325 229C308 219 298 224 290 240C271 219 244 222 230 235C218 220 199 220 188 237C169 219 147 224 127 242Z" fill="url(#manePose2)"/>
                 <path d="M155 280Q176 299 196 279M260 279Q280 299 300 280" fill="none" stroke="#6c566b" stroke-width="7" stroke-linecap="round"/>
                 <path d="M165 290L161 297M186 290L190 297M270 292L266 299M292 291L297 299" stroke="#6c566b" stroke-width="3.5" stroke-linecap="round"/>
                 <ellipse cx="154" cy="311" rx="20" ry="12" fill="#ffb5c9" opacity=".52"/><ellipse cx="301" cy="311" rx="20" ry="12" fill="#ffb5c9" opacity=".52"/>
                 <path d="M226 307Q237 321 249 307" fill="none" stroke="#aa778e" stroke-width="4" stroke-linecap="round"/>
                 <path d="M128 252C117 298 145 343 165 359" fill="none" stroke="#f5b0d8" stroke-width="17" stroke-linecap="round" opacity=".65"/>
               </g>
-              <path d="M80 352C64 320 99 292 129 312C144 278 198 284 208 317C240 295 279 303 294 332C336 311 381 346 365 373C346 395 118 395 94 381C85 376 79 364 80 352Z" fill="#fff" opacity=".98" filter="url(#fluffyShadow2)"/>
+              <path d="M80 352C64 320 99 292 129 312C144 278 198 284 208 317C240 295 279 303 294 332C336 311 381 346 365 373C346 395 118 395 94 381C85 376 79 364 80 352Z" fill="#fff" opacity=".98" filter="url(#fluffyShadowPose2)"/>
               <path d="M135 360Q164 374 196 361M256 361Q294 376 327 359" fill="none" stroke="#eee3fa" stroke-width="5" stroke-linecap="round"/>
             </svg></div>
             <span class="story-step">02 · в ожидании встречи</span>
@@ -699,31 +744,31 @@ body {background:radial-gradient(ellipse at 75% 8%,#e8e1ff 0,transparent 42%),ra
             <span class="story-decoration">✦ ☾ ✦</span>
           </article>
           <article class="storybook-card story-blue">
-            <div class="story-art mini-unicorn blue-unicorn" aria-hidden="true"><svg class="unicorn" viewBox="0 0 460 440" role="img" aria-label="Милый спящий единорог с пастельной гривой и золотым рогом" xmlns="http://www.w3.org/2000/svg">
+            <div class="story-art mini-unicorn blue-unicorn" aria-hidden="true"><svg class="unicorn unicorn-dreaming" viewBox="0 0 460 440" role="img" aria-label="Единорожка, который мечтает" xmlns="http://www.w3.org/2000/svg">
               <defs>
-                <linearGradient id="mane3" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffc9df"/><stop offset=".5" stop-color="#d7b9fa"/><stop offset="1" stop-color="#aee8f6"/></linearGradient>
-                <linearGradient id="horn3" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff2bf"/><stop offset="1" stop-color="#f8c879"/></linearGradient>
-                <filter id="fluffyShadow3" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="18" stdDeviation="13" flood-color="#9976b8" flood-opacity=".18"/></filter>
+                <linearGradient id="manePose3" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffc9df"/><stop offset=".5" stop-color="#d7b9fa"/><stop offset="1" stop-color="#aee8f6"/></linearGradient>
+                <linearGradient id="hornPose3" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff2bf"/><stop offset="1" stop-color="#f8c879"/></linearGradient>
+                <filter id="fluffyShadowPose3" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="18" stdDeviation="13" flood-color="#9976b8" flood-opacity=".18"/></filter>
               </defs>
               <ellipse cx="228" cy="368" rx="155" ry="26" fill="#aa91cc" opacity=".09"/>
-              <g filter="url(#fluffyShadow3)">
-                <path d="M153 226C113 200 91 244 113 268C88 283 95 322 126 332C121 374 172 391 198 364C240 401 300 378 300 331C353 328 366 269 324 239C332 182 281 161 248 181C206 151 160 172 153 226Z" fill="url(#mane3)"/>
+              <g filter="url(#fluffyShadowPose3)">
+                <path d="M153 226C113 200 91 244 113 268C88 283 95 322 126 332C121 374 172 391 198 364C240 401 300 378 300 331C353 328 366 269 324 239C332 182 281 161 248 181C206 151 160 172 153 226Z" fill="url(#manePose3)"/>
                 <ellipse cx="225" cy="289" rx="111" ry="93" fill="#fffdfd"/>
                 <ellipse cx="201" cy="356" rx="34" ry="27" fill="#fffdfd"/><ellipse cx="264" cy="354" rx="34" ry="27" fill="#fffdfd"/>
                 <path d="M182 213C144 186 143 151 170 146C193 142 211 167 208 212Z" fill="#fffdfd"/>
                 <path d="M190 208C170 177 166 162 177 162C193 161 201 187 199 209Z" fill="#f7cfe0"/>
                 <path d="M264 211C282 160 315 142 333 159C352 181 323 214 287 227Z" fill="#fffdfd"/>
                 <path d="M282 207C305 174 319 170 326 178C336 190 306 213 287 217Z" fill="#f7cfe0"/>
-                <path d="M228 208L263 82L292 218Z" fill="url(#horn3)" stroke="#f0cd90" stroke-width="4"/>
+                <path d="M228 208L263 82L292 218Z" fill="url(#hornPose3)" stroke="#f0cd90" stroke-width="4"/>
                 <path d="M243 161L279 162M237 184L287 186" stroke="#e6b977" stroke-width="4" stroke-linecap="round" opacity=".65"/>
-                <path d="M127 242C116 183 175 160 203 194C214 172 249 167 267 195C298 175 330 195 325 229C308 219 298 224 290 240C271 219 244 222 230 235C218 220 199 220 188 237C169 219 147 224 127 242Z" fill="url(#mane3)"/>
+                <path d="M127 242C116 183 175 160 203 194C214 172 249 167 267 195C298 175 330 195 325 229C308 219 298 224 290 240C271 219 244 222 230 235C218 220 199 220 188 237C169 219 147 224 127 242Z" fill="url(#manePose3)"/>
                 <path d="M155 280Q176 299 196 279M260 279Q280 299 300 280" fill="none" stroke="#6c566b" stroke-width="7" stroke-linecap="round"/>
                 <path d="M165 290L161 297M186 290L190 297M270 292L266 299M292 291L297 299" stroke="#6c566b" stroke-width="3.5" stroke-linecap="round"/>
                 <ellipse cx="154" cy="311" rx="20" ry="12" fill="#ffb5c9" opacity=".52"/><ellipse cx="301" cy="311" rx="20" ry="12" fill="#ffb5c9" opacity=".52"/>
                 <path d="M226 307Q237 321 249 307" fill="none" stroke="#aa778e" stroke-width="4" stroke-linecap="round"/>
                 <path d="M128 252C117 298 145 343 165 359" fill="none" stroke="#f5b0d8" stroke-width="17" stroke-linecap="round" opacity=".65"/>
               </g>
-              <path d="M80 352C64 320 99 292 129 312C144 278 198 284 208 317C240 295 279 303 294 332C336 311 381 346 365 373C346 395 118 395 94 381C85 376 79 364 80 352Z" fill="#fff" opacity=".98" filter="url(#fluffyShadow3)"/>
+              <path d="M80 352C64 320 99 292 129 312C144 278 198 284 208 317C240 295 279 303 294 332C336 311 381 346 365 373C346 395 118 395 94 381C85 376 79 364 80 352Z" fill="#fff" opacity=".98" filter="url(#fluffyShadowPose3)"/>
               <path d="M135 360Q164 374 196 361M256 361Q294 376 327 359" fill="none" stroke="#eee3fa" stroke-width="5" stroke-linecap="round"/>
             </svg></div>
             <span class="story-step">03 · навсегда в сердце</span>
@@ -776,7 +821,7 @@ body {background:radial-gradient(ellipse at 75% 8%,#e8e1ff 0,transparent 42%),ra
 
   <footer class="footer">
     <div class="container footer-inner">
-      <a class="brand" href="#top"><span class="brand-badge">☾</span><span class="brand-name">имёныш<span class="dot">.</span></span></a>
+      <a class="brand" href="#top"><span class="brand-badge">✦</span><span class="brand-name">Имёныш<span class="dot">♡</span></span></a>
       <div>С любовью к именам, семьям и маленьким чудесам.</div>
       <div>© 2026 Имёныш · Dreamy demo v2</div>
     </div>
@@ -785,7 +830,7 @@ body {background:radial-gradient(ellipse at 75% 8%,#e8e1ff 0,transparent 42%),ra
   <div class="flow" id="flow" role="dialog" aria-modal="true" aria-labelledby="flowTitle">
     <div class="flow-shell">
       <div class="flow-header">
-        <a class="brand" href="#top"><span class="brand-badge">☾</span><span class="brand-name">имёныш<span class="dot">.</span></span></a>
+        <a class="brand" href="#top"><span class="brand-badge">✦</span><span class="brand-name">Имёныш<span class="dot">♡</span></span></a>
         <button class="icon-btn" id="closeFlow" aria-label="Закрыть">×</button>
       </div>
       <div class="flow-top">

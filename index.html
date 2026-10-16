@@ -8,7 +8,7 @@
   <title>Имёныш — любовь начинается с имени</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&family=Nunito:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
   <style>
     :root{
       --bg:#fff9ff;
@@ -584,9 +584,52 @@ em{font-style:normal!important;color:inherit!important}
 .result-hero{background:linear-gradient(135deg,#ffe3ef,#efe6ff)}
 @media(max-width:980px){.wishes{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:760px){.wishes{grid-template-columns:1fr;max-width:400px;margin-inline:auto}.pal.wing{width:96px}.p-heart,.p-flower{width:32px}.dv{width:32px}.dv.big{width:80px}.cta-pal.r{width:80px;margin-top:0}}
-  </style>
+
+/* v7 — единорожки в разных позах */
+.p-fly{width:150px;left:3%;top:4%;transform:rotate(-4deg)}
+.p-moon{left:auto;right:31%;top:2%;width:60px}.p-flower{right:auto;left:40%;top:3%;width:40px}.p-spark{display:none}
+.wish-art{width:176px;margin-left:-88px;top:6px}
+.herd{padding:70px 0 10px}
+.herd-row{display:flex;justify-content:center;align-items:flex-end;flex-wrap:wrap;gap:6px clamp(0px,2vw,24px)}
+.hu{width:clamp(130px,17vw,205px)}
+.hu.h2{filter:var(--sticker) hue-rotate(35deg)}.hu.h3{filter:var(--sticker) hue-rotate(-30deg)}.hu.h4{filter:var(--sticker) hue-rotate(80deg)}.hu.h5{filter:var(--sticker) hue-rotate(150deg)}
+.hu.flip{transform:scaleX(-1)}
+.herd-cap{text-align:center;margin:18px auto 0;max-width:560px;font-family:'Comfortaa',sans-serif;color:var(--heading);line-height:1.6}
+.cta-pal.r{width:140px;margin-top:-62px}
+@media(max-width:760px){.p-fly{width:96px}.p-moon{right:6%;top:3%;width:44px}.p-flower{display:none}.hu{width:42%}.cta-pal.r{width:84px}}
+
+/* v9 — славянская вышивка */
+.rushnik{height:30px;margin:46px 0 4px;opacity:.9;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3E%3Cpath d='M15 4L26 15L15 26L4 15Z' fill='none' stroke='%23ff8da1' stroke-width='2.5'/%3E%3Cpath d='M15 10L20 15L15 20L10 15Z' fill='%23ffd166'/%3E%3Ccircle cx='15' cy='15' r='1.6' fill='%23ff8da1'/%3E%3C/svg%3E") repeat-x center}
+.herd-cap{font-size:1.02rem}
+  
+/* Имёныш — русская книжная сказка: персонажи v10 */
+:root{--sticker:drop-shadow(0 10px 15px rgba(139,103,162,.17))}
+.unicorn-wrap .unicorn,.wish-art,.story-art .unicorn,.herd-row .hu,.p-fly{filter:drop-shadow(0 11px 12px rgba(149,112,165,.14))}
+.wish-art{animation:bookFloat 6.5s ease-in-out infinite;transform-origin:center center}
+.wish:nth-child(2) .wish-art{animation-delay:-1.7s}.wish:nth-child(3) .wish-art{animation-delay:-3.1s}.wish:nth-child(4) .wish-art{animation-delay:-4.6s}
+.herd-row .hu{animation:bookFloat 6.8s ease-in-out infinite}
+.herd-row .hu:nth-child(2){animation-delay:-1.2s}.herd-row .hu:nth-child(3){animation-delay:-2.7s}.herd-row .hu:nth-child(4){animation-delay:-4s}.herd-row .hu:nth-child(5){animation-delay:-5.2s}
+.herd-row .hu.flip{animation-name:bookFloatFlip}
+@keyframes bookFloat{0%,100%{translate:0 0}50%{translate:0 -9px}}
+@keyframes bookFloatFlip{0%,100%{translate:0 0;transform:scaleX(-1)}50%{translate:0 -9px;transform:scaleX(-1)}}
+@media(prefers-reduced-motion:reduce){.wish-art,.herd-row .hu{animation:none!important}}
+</style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<linearGradient id="mg" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="300" y2="260"><stop stop-color="#f4c9aa"/><stop offset=".42" stop-color="#e8b6c5"/><stop offset=".78" stop-color="#c9b9e6"/><stop offset="1" stop-color="#dfcbb7"/></linearGradient>
+<g id="rh"><path d="M0 -7L7 0L0 7L-7 0Z" fill="#ff8da1"/><circle r="2.2" fill="#ffe08a"/></g><g id="br"><ellipse cx="0" cy="0" rx="12" ry="10" fill="url(#mg)"/><ellipse cx="3" cy="15" rx="12" ry="10" fill="url(#mg)"/><ellipse cx="0" cy="30" rx="12" ry="10" fill="url(#mg)"/><ellipse cx="3" cy="45" rx="11" ry="9" fill="url(#mg)"/><path d="M3 56l-15-8v17zM3 56l15-8v17z" fill="#ff7a8a"/><circle cx="3" cy="56" r="4" fill="#ff5f7a"/></g>
+<g id="sh"><path d="M-92 10C-110 -40 -70 -92 -10 -84C40 -96 100 -60 92 4C108 40 80 84 50 70C30 96 -30 96 -50 70C-84 80 -108 46 -92 10Z" fill="url(#mane)"/><path d="M-64 -48C-86 -80 -62 -94 -46 -82C-34 -72 -38 -58 -38 -50Z" fill="#fffdfd"/><path d="M-58 -56C-70 -74 -58 -80 -50 -72C-46 -66 -46 -60 -46 -56Z" fill="#f7cfe0"/><path d="M64 -48C86 -80 62 -94 46 -82C34 -72 38 -58 38 -50Z" fill="#fffdfd"/><path d="M58 -56C70 -74 58 -80 50 -72C46 -66 46 -60 46 -56Z" fill="#f7cfe0"/><ellipse cy="12" rx="70" ry="56" fill="#fffdfd"/><ellipse cy="32" rx="26" ry="16" fill="#fff1ee"/><path d="M-66 -10C-72 -52 -30 -70 -6 -44C-14 -30 -36 -24 -48 -4Z" fill="url(#mane)"/><path d="M66 -10C72 -52 30 -70 6 -44C14 -30 36 -24 48 -4Z" fill="url(#mane)"/><path d="M-57 -20Q-46 -40 -25 -42M25 -42Q48 -38 57 -20" fill="none" stroke="#fff5e9" stroke-width="3" stroke-linecap="round" opacity=".6"/><path d="M-10 -46L4 -120L18 -46Z" fill="url(#horn)" stroke="#f0cd90" stroke-width="4" stroke-linejoin="round"/><path d="M-3 -88L11 -92M-6 -70L14 -74" stroke="#e6b977" stroke-width="3.5" stroke-linecap="round" opacity=".7"/><ellipse cx="-47" cy="30" rx="16" ry="10" fill="#f5bab7" opacity=".46"/><ellipse cx="47" cy="30" rx="16" ry="10" fill="#f5bab7" opacity=".46"/><ellipse cy="25" rx="5" ry="3.5" fill="#f2a3b8"/><path d="M-9 34q9 8 18 0" fill="none" stroke="#ad8075" stroke-width="3" stroke-linecap="round"/></g>
+<g id="wr"><g fill="#b9e7c9"><ellipse cx="-34" cy="-46" rx="10" ry="4" transform="rotate(-25 -34 -46)"/><ellipse cx="-50" cy="-30" rx="10" ry="4" transform="rotate(-50 -50 -30)"/><ellipse cx="34" cy="-46" rx="10" ry="4" transform="rotate(25 34 -46)"/><ellipse cx="50" cy="-30" rx="10" ry="4" transform="rotate(50 50 -30)"/></g><circle cx="-58" cy="-20" r="8" fill="#ff9ec4"/><circle cx="-43" cy="-38" r="8" fill="#fff" stroke="#f1dcef" stroke-width="2"/><circle cx="-43" cy="-38" r="3" fill="#ffd166"/><circle cx="-26" cy="-47" r="7" fill="#9fd0ff"/><circle cx="26" cy="-47" r="7" fill="#9fd0ff"/><circle cx="43" cy="-38" r="8" fill="#fff" stroke="#f1dcef" stroke-width="2"/><circle cx="43" cy="-38" r="3" fill="#ffd166"/><circle cx="58" cy="-20" r="8" fill="#ff9ec4"/><circle cx="-66" cy="-6" r="5" fill="#ff7a8a"/><circle cx="66" cy="-6" r="5" fill="#ff7a8a"/></g>
+<g id="ec"><path d="M-40 10q14 13 28 0M12 10q14 13 28 0M-41 11l-6 -3M-39 15l-6 2M41 11l6 -3M39 15l6 2" fill="none" stroke="#806357" stroke-width="3.2" stroke-linecap="round"/></g>
+<g id="eh"><path d="M-40 16q14 -15 28 0M12 16q14 -15 28 0" fill="none" stroke="#806357" stroke-width="3.2" stroke-linecap="round"/></g>
+<g id="eo"><path d="M-38 10Q-28 -1 -18 10Q-27 19 -38 10Z" fill="#805f53"/><path d="M18 10Q28 -1 38 10Q28 19 18 10Z" fill="#805f53"/><circle cx="-27" cy="8" r="2" fill="#fff8ee"/><circle cx="29" cy="8" r="2" fill="#fff8ee"/><path d="M-37 -2Q-27 -7 -17 -2M17 -2Q27 -7 37 -2" fill="none" stroke="#bc9587" stroke-width="2" stroke-linecap="round"/></g>
+</defs>
+<symbol id="u-lie" viewBox="0 0 300 260"><path d="M52 206C6 206 4 146 40 150" fill="none" stroke="url(#mg)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/><path d="M248 206C296 204 296 144 258 150" fill="none" stroke="url(#mg)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="150" cy="206" rx="112" ry="40" fill="#fffdfd"/><use href="#rh" x="76" y="212"/><use href="#rh" x="202" y="212"/><use href="#sh" transform="translate(150 128) scale(.95)"/><use href="#ec" transform="translate(150 128) scale(.95)"/><ellipse cx="116" cy="226" rx="34" ry="20" fill="#fffdfd"/><ellipse cx="184" cy="226" rx="34" ry="20" fill="#fffdfd"/><ellipse cx="116" cy="236" rx="28" ry="15" fill="#ffb5c9"/><ellipse cx="184" cy="236" rx="28" ry="15" fill="#ffb5c9"/><text x="236" y="70" font-size="28" font-weight="700" fill="#b99be0" font-family="Comfortaa,sans-serif">z</text><text x="262" y="42" font-size="20" font-weight="700" fill="#cdb6ee" font-family="Comfortaa,sans-serif">z</text></symbol>
+<symbol id="u-sit" viewBox="0 0 300 260"><path d="M96 100C56 124 58 176 88 196" fill="none" stroke="url(#mg)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="150" cy="200" rx="72" ry="58" fill="#fffdfd"/><ellipse cx="108" cy="232" rx="32" ry="20" fill="#fffdfd"/><ellipse cx="192" cy="232" rx="32" ry="20" fill="#fffdfd"/><ellipse cx="108" cy="246" rx="26" ry="14" fill="#ffb5c9"/><ellipse cx="192" cy="246" rx="26" ry="14" fill="#ffb5c9"/><use href="#rh" x="125" y="222"/><use href="#rh" x="175" y="222"/><use href="#br" x="216" y="136"/><use href="#sh" transform="translate(150 98) scale(.8)"/><use href="#eh" transform="translate(150 98) scale(.8)"/><ellipse cx="116" cy="178" rx="20" ry="15" fill="#fffdfd"/><ellipse cx="184" cy="178" rx="20" ry="15" fill="#fffdfd"/><use href="#i-star" x="122" y="150" width="56" height="56"/></symbol>
+<symbol id="u-sit2" viewBox="0 0 300 260"><path d="M96 100C56 124 58 176 88 196" fill="none" stroke="url(#mg)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="150" cy="200" rx="72" ry="58" fill="#fffdfd"/><ellipse cx="108" cy="232" rx="32" ry="20" fill="#fffdfd"/><ellipse cx="192" cy="232" rx="32" ry="20" fill="#fffdfd"/><ellipse cx="108" cy="246" rx="26" ry="14" fill="#ffb5c9"/><ellipse cx="192" cy="246" rx="26" ry="14" fill="#ffb5c9"/><use href="#rh" x="125" y="222"/><use href="#rh" x="175" y="222"/><use href="#br" x="216" y="136"/><use href="#sh" transform="translate(150 98) scale(.8)"/><use href="#ec" transform="translate(150 98) scale(.8)"/><ellipse cx="116" cy="178" rx="20" ry="15" fill="#fffdfd"/><ellipse cx="184" cy="178" rx="20" ry="15" fill="#fffdfd"/><use href="#i-heart" x="124" y="152" width="52" height="52"/></symbol>
+<symbol id="u-fly" viewBox="0 0 300 260"><use href="#i-wing" x="6" y="88" width="116" height="96"/><use href="#i-wing" x="6" y="88" width="116" height="96" transform="translate(300 0) scale(-1 1)"/><path d="M100 190C50 204 36 250 78 248" fill="none" stroke="url(#mg)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="150" cy="172" rx="56" ry="48" fill="#fffdfd"/><ellipse cx="124" cy="214" rx="15" ry="22" fill="#fffdfd"/><ellipse cx="176" cy="214" rx="15" ry="22" fill="#fffdfd"/><ellipse cx="124" cy="232" rx="17" ry="11" fill="#ffb5c9"/><ellipse cx="176" cy="232" rx="17" ry="11" fill="#ffb5c9"/><use href="#rh" x="134" y="176"/><use href="#sh" transform="translate(150 96) scale(.72)"/><use href="#eh" transform="translate(150 96) scale(.72)"/><use href="#i-spark" x="20" y="40" width="28" height="28"/><use href="#i-spark" x="252" y="30" width="22" height="22"/><use href="#i-spark" x="238" y="190" width="20" height="20"/></symbol>
+<symbol id="u-fly2" viewBox="0 0 300 260"><use href="#i-rainbow" x="0" y="176" width="150" height="84"/><use href="#i-cloud" x="170" y="200" width="100" height="60"/><g transform="translate(0 -14)"><use href="#i-wing" x="6" y="88" width="116" height="96"/><use href="#i-wing" x="6" y="88" width="116" height="96" transform="translate(300 0) scale(-1 1)"/><path d="M100 190C50 204 36 250 78 248" fill="none" stroke="url(#mg)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="150" cy="172" rx="56" ry="48" fill="#fffdfd"/><ellipse cx="124" cy="214" rx="15" ry="22" fill="#fffdfd"/><ellipse cx="176" cy="214" rx="15" ry="22" fill="#fffdfd"/><ellipse cx="124" cy="232" rx="17" ry="11" fill="#ffb5c9"/><ellipse cx="176" cy="232" rx="17" ry="11" fill="#ffb5c9"/><use href="#rh" x="134" y="176"/><use href="#sh" transform="translate(150 96) scale(.72)"/><use href="#eh" transform="translate(150 96) scale(.72)"/><use href="#i-spark" x="20" y="40" width="28" height="28"/><use href="#i-spark" x="252" y="30" width="22" height="22"/><use href="#i-spark" x="238" y="190" width="20" height="20"/></g></symbol></svg>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
 <symbol id="i-uni" viewBox="0 0 200 200"><path d="M82 66C40 70 28 120 52 150C40 160 46 186 62 190C60 160 70 140 88 128C70 110 72 88 100 68Z" fill="url(#mane)"/><path d="M60 192C62 140 50 100 80 70C95 55 125 50 145 62C165 74 178 98 172 118C168 132 150 138 138 134C128 150 120 170 118 192Z" fill="#fffdfd"/><path d="M92 62L94 32L116 56Z" fill="#fffdfd"/><path d="M96 56L97 42L108 55Z" fill="#f7cfe0"/><path d="M124 54L148 4L144 62Z" fill="url(#horn)" stroke="#f0cd90" stroke-width="3" stroke-linejoin="round"/><path d="M92 60C118 46 130 70 112 90C100 70 96 66 92 60Z" fill="url(#mane)" opacity=".9"/><path d="M130 94q8 8 16 0M128 90l-4-3M148 90l4-3" fill="none" stroke="#4a2f6b" stroke-width="3.5" stroke-linecap="round"/><ellipse cx="128" cy="112" rx="10" ry="6" fill="#ffb5c9" opacity=".6"/><circle cx="166" cy="118" r="2.6" fill="#4a2f6b"/><path d="M150 127q8 4 14-2" fill="none" stroke="#aa778e" stroke-width="3" stroke-linecap="round"/><circle cx="72" cy="120" r="8" fill="#ffc2dc"/><circle cx="64" cy="132" r="6" fill="#ffe08a"/><circle cx="80" cy="134" r="6" fill="#ffc2dc"/></symbol>
 <symbol id="i-wing" viewBox="0 0 120 100"><path d="M112 62C84 8 34 6 6 20C26 22 34 32 36 40C20 38 10 44 4 54C22 52 32 58 36 66C24 68 18 76 14 86C50 94 98 88 112 62Z" fill="#fff" stroke="#fff" stroke-width="4" stroke-linejoin="round"/><path d="M100 62C80 30 50 24 28 28M92 72C70 54 44 52 24 58" fill="none" stroke="#eadcf8" stroke-width="3" stroke-linecap="round"/></symbol>
@@ -595,7 +638,7 @@ em{font-style:normal!important;color:inherit!important}
 <symbol id="i-rainbow" viewBox="0 0 120 80"><g fill="none" stroke-width="9" stroke-linecap="round"><path d="M14 70A46 46 0 0 1 106 70" stroke="#ffb3d1"/><path d="M26 70A34 34 0 0 1 94 70" stroke="#ffe08a"/><path d="M38 70A22 22 0 0 1 82 70" stroke="#a9dcff"/></g></symbol></svg>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="unicorn" viewBox="0 0 460 440">
               <defs>
-                <linearGradient id="mane" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffc9df"/><stop offset=".5" stop-color="#d7b9fa"/><stop offset="1" stop-color="#aee8f6"/></linearGradient>
+                <linearGradient id="mane" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7d6b6"/><stop offset=".45" stop-color="#ecc2be"/><stop offset=".8" stop-color="#d2c1e3"/><stop offset="1" stop-color="#e7c8b1"/></linearGradient>
                 <linearGradient id="horn" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff2bf"/><stop offset="1" stop-color="#f8c879"/></linearGradient>
                 <filter id="fluffyShadow" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="18" stdDeviation="13" flood-color="#9976b8" flood-opacity=".18"/></filter>
               </defs>
@@ -611,11 +654,11 @@ em{font-style:normal!important;color:inherit!important}
                 <path d="M228 208L263 82L292 218Z" fill="url(#horn)" stroke="#f0cd90" stroke-width="4"/>
                 <path d="M243 161L279 162M237 184L287 186" stroke="#e6b977" stroke-width="4" stroke-linecap="round" opacity=".65"/>
                 <path d="M127 242C116 183 175 160 203 194C214 172 249 167 267 195C298 175 330 195 325 229C308 219 298 224 290 240C271 219 244 222 230 235C218 220 199 220 188 237C169 219 147 224 127 242Z" fill="url(#mane)"/>
-                <path d="M155 280Q176 299 196 279M260 279Q280 299 300 280" fill="none" stroke="#6c566b" stroke-width="7" stroke-linecap="round"/>
-                <path d="M165 290L161 297M186 290L190 297M270 292L266 299M292 291L297 299" stroke="#6c566b" stroke-width="3.5" stroke-linecap="round"/>
+                <path d="M155 280Q176 299 196 279M260 279Q280 299 300 280" fill="none" stroke="#846758" stroke-width="5" stroke-linecap="round"/>
+                <path d="M165 290L161 297M186 290L190 297M270 292L266 299M292 291L297 299" stroke="#846758" stroke-width="2.6" stroke-linecap="round"/>
                 <ellipse cx="154" cy="311" rx="20" ry="12" fill="#ffb5c9" opacity=".52"/><ellipse cx="301" cy="311" rx="20" ry="12" fill="#ffb5c9" opacity=".52"/>
                 <path d="M226 307Q237 321 249 307" fill="none" stroke="#aa778e" stroke-width="4" stroke-linecap="round"/>
-                <path d="M128 252C117 298 145 343 165 359" fill="none" stroke="#f5b0d8" stroke-width="17" stroke-linecap="round" opacity=".65"/>
+                <path d="M128 252C117 298 145 343 165 359" fill="none" stroke="#e7bdb8" stroke-width="12" stroke-linecap="round" opacity=".45"/>
               </g>
               <path d="M80 352C64 320 99 292 129 312C144 278 198 284 208 317C240 295 279 303 294 332C336 311 381 346 365 373C346 395 118 395 94 381C85 376 79 364 80 352Z" fill="#fff" opacity=".98" filter="url(#fluffyShadow)"/>
               <path d="M135 360Q164 374 196 361M256 361Q294 376 327 359" fill="none" stroke="#eee3fa" stroke-width="5" stroke-linecap="round"/>
@@ -672,7 +715,7 @@ em{font-style:normal!important;color:inherit!important}
         <div class="hero-card fairy-scene" aria-label="Сказочный единорог на облачке под радугой">
           <div class="fairy-halo"></div>
           <div class="rainbow rainbow-one"></div><div class="rainbow rainbow-two"></div>
-          <svg class="art pal p-moon" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-moon"/></svg><svg class="art pal p-star" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-star"/></svg><svg class="art pal p-cloud" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-cloud"/></svg><svg class="art pal p-bear" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-bear"/></svg><svg class="art pal p-spark" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-spark"/></svg><svg class="art pal wing wl" viewBox="0 0 120 100" aria-hidden="true"><use href="#i-wing"/></svg><svg class="art pal wing wr" viewBox="0 0 120 100" aria-hidden="true"><use href="#i-wing"/></svg><svg class="art pal p-heart" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-heart"/></svg><svg class="art pal p-flower" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-flower"/></svg><div class="unicorn-wrap">
+          <svg class="art pal p-moon" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-moon"/></svg><svg class="art pal p-star" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-star"/></svg><svg class="art pal p-cloud" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-cloud"/></svg><svg class="art pal p-bear" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-bear"/></svg><svg class="art pal p-spark" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-spark"/></svg><svg class="art pal p-fly" viewBox="0 0 300 260" aria-hidden="true"><use href="#u-fly"/></svg><svg class="art pal wing wl" viewBox="0 0 120 100" aria-hidden="true"><use href="#i-wing"/></svg><svg class="art pal wing wr" viewBox="0 0 120 100" aria-hidden="true"><use href="#i-wing"/></svg><svg class="art pal p-heart" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-heart"/></svg><svg class="art pal p-flower" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-flower"/></svg><div class="unicorn-wrap">
             <svg class="unicorn" viewBox="0 0 460 440" aria-hidden="true"><use href="#unicorn"/></svg>
           </div>
           <div class="floating-sticker sticker-top">✧ Ты уже так любим, малыш</div>
@@ -764,7 +807,7 @@ em{font-style:normal!important;color:inherit!important}
       </div>
     </section>
 
-    <section class="meadow" id="wishes"><div class="container"><div class="section-head"><div class="eyebrow">✿ поляна нежных слов</div><h2 class="section-title">Единорожки шепчут малышу самые тёплые пожелания</h2><p class="section-copy">Пока вы выбираете имя, сказочные друзья уже собрали для вашего чуда целую охапку доброты, света и нежности.</p></div><div class="wishes"><article class="wish w0"><svg class="art wish-art" viewBox="0 0 200 200" aria-hidden="true"><use href="#i-uni"/></svg><h3>Пусть каждое утро пахнет молоком и мёдом</h3><p>Тёплые лучики, мягкие пелёнки и самые нежные поцелуи в макушку.</p><span class="wish-deco">♡ ✧ ♡</span></article><article class="wish w1"><svg class="art wish-art" viewBox="0 0 200 200" aria-hidden="true"><use href="#i-uni"/></svg><h3>Пусть сны будут лёгкими, как облачко</h3><p>Колыбельная, тихий свет ночника и мама рядом.</p><span class="wish-deco">♡ ✧ ♡</span></article><article class="wish w2"><svg class="art wish-art" viewBox="0 0 200 200" aria-hidden="true"><use href="#i-uni"/></svg><h3>Пусть тебя всегда обнимают добрые руки</h3><p>Столько любви, что хватит на всю твою большую жизнь.</p><span class="wish-deco">♡ ✧ ♡</span></article><article class="wish w3"><svg class="art wish-art" viewBox="0 0 200 200" aria-hidden="true"><use href="#i-uni"/></svg><h3>Пусть твоё имя звучит как колыбельная</h3><p>Мягко, ласково, так, чтобы хотелось шептать его снова и снова.</p><span class="wish-deco">♡ ✧ ♡</span></article></div></div></section>
+    <section class="meadow" id="wishes"><div class="container"><div class="section-head"><div class="eyebrow">✿ поляна нежных слов</div><h2 class="section-title">Единорожки шепчут малышу самые тёплые пожелания</h2><p class="section-copy">Пока вы выбираете имя, сказочные друзья уже собрали для вашего чуда целую охапку доброты, света и нежности.</p></div><div class="wishes"><article class="wish w0"><svg class="art wish-art" viewBox="0 0 300 260" aria-hidden="true"><use href="#u-sit"/></svg><h3>Баю-баюшки-баю, тихо-тихо засыпай</h3><p>Тёплые лучики, мягкие пелёнки и самые нежные поцелуи в макушку.</p><span class="wish-deco">♡ ✧ ♡</span></article><article class="wish w1"><svg class="art wish-art" viewBox="0 0 300 260" aria-hidden="true"><use href="#u-lie"/></svg><h3>Пусть сны будут лёгкими, как облачко</h3><p>Колыбельная, тихий свет ночника и мама рядом.</p><span class="wish-deco">♡ ✧ ♡</span></article><article class="wish w2"><svg class="art wish-art" viewBox="0 0 300 260" aria-hidden="true"><use href="#u-fly2"/></svg><h3>Расти, дитятко, как цветок в поле — светло и ласково</h3><p>Столько любви, что хватит на всю твою большую жизнь.</p><span class="wish-deco">♡ ✧ ♡</span></article><article class="wish w3"><svg class="art wish-art" viewBox="0 0 300 260" aria-hidden="true"><use href="#u-sit2"/></svg><h3>Пусть твоё имя звучит как колыбельная</h3><p>Мягко, ласково, так, чтобы хотелось шептать его снова и снова.</p><span class="wish-deco">♡ ✧ ♡</span></article></div></div></section>
 
     <section class="love-story" id="story">
       <div class="container">
@@ -775,21 +818,21 @@ em{font-style:normal!important;color:inherit!important}
         </div>
         <div class="storybook">
           <article class="storybook-card story-pink">
-            <div class="story-art mini-unicorn rose-unicorn" aria-hidden="true"><svg class="unicorn" viewBox="0 0 460 440" aria-hidden="true"><use href="#unicorn"/></svg></div>
+            <div class="story-art mini-unicorn rose-unicorn" aria-hidden="true"><svg class="unicorn" viewBox="0 0 300 260" aria-hidden="true"><use href="#u-lie"/></svg></div>
             <span class="story-step">01 · начало чудес</span>
             <h3>«Кажется, нас стало больше…»</h3>
             <p>В сердце появляется место для кого-то, кого вы ещё не обнимали, но уже любите всем существом.</p>
             <span class="story-decoration">♡ ✧ ♡</span>
           </article>
           <article class="storybook-card story-lilac">
-            <div class="story-art mini-unicorn lavender-unicorn" aria-hidden="true"><svg class="unicorn" viewBox="0 0 460 440" aria-hidden="true"><use href="#unicorn"/></svg></div>
+            <div class="story-art mini-unicorn lavender-unicorn" aria-hidden="true"><svg class="unicorn" viewBox="0 0 300 260" aria-hidden="true"><use href="#u-sit"/></svg></div>
             <span class="story-step">02 · в ожидании встречи</span>
             <h3>«Интересно, каким будет твой смех?»</h3>
             <p>Вы представляете крошечные пальчики, сонные объятия и как однажды позовёте малыша по имени.</p>
             <span class="story-decoration">✦ ☾ ✦</span>
           </article>
           <article class="storybook-card story-blue">
-            <div class="story-art mini-unicorn blue-unicorn" aria-hidden="true"><svg class="unicorn" viewBox="0 0 460 440" aria-hidden="true"><use href="#unicorn"/></svg></div>
+            <div class="story-art mini-unicorn blue-unicorn" aria-hidden="true"><svg class="unicorn" viewBox="0 0 300 260" aria-hidden="true"><use href="#u-fly"/></svg></div>
             <span class="story-step">03 · навсегда в сердце</span>
             <h3>«Мы уже придумали, как тебя любить»</h3>
             <p>Имя будет звучать в колыбельных, в первых поздравлениях и в самых счастливых семейных воспоминаниях.</p>
@@ -799,6 +842,9 @@ em{font-style:normal!important;color:inherit!important}
         <div class="story-closing"><span>✧</span> Не нужно торопиться. Имя, которое согреет ваше сердце, обязательно найдётся. <span>✧</span></div>
       </div>
     </section>
+
+    <div class="rushnik" aria-hidden="true"></div>
+    <section class="herd" aria-label="Единорожки"><div class="container"><div class="herd-row"><svg class="art hu " viewBox="0 0 300 260" aria-hidden="true"><use href="#u-lie"/></svg><svg class="art hu h2" viewBox="0 0 300 260" aria-hidden="true"><use href="#u-sit"/></svg><svg class="art hu h3" viewBox="0 0 300 260" aria-hidden="true"><use href="#u-fly2"/></svg><svg class="art hu h4" viewBox="0 0 300 260" aria-hidden="true"><use href="#u-sit2"/></svg><svg class="art hu h5 flip" viewBox="0 0 300 260" aria-hidden="true"><use href="#u-lie"/></svg></div><p class="herd-cap">Единорожки в веночках стерегут твою колыбельку и берегут твоё имя ♡</p></div></section>
 
     <section class="cta-band">
       <div class="container">
@@ -838,6 +884,7 @@ em{font-style:normal!important;color:inherit!important}
     </section>
   </main>
 
+  <div class="rushnik" aria-hidden="true"></div>
   <footer class="footer">
     <div class="container footer-inner">
       <a class="brand" href="#top"><span class="brand-badge"><svg class="art" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-moon"/></svg></span><span class="brand-name">имёныш<span class="dot">.</span></span></a>

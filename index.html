@@ -549,9 +549,50 @@ em{font-style:normal!important;color:inherit!important}
 @media(max-width:980px){.ticker{width:calc(100% + 40px)}}
 @media(max-width:760px){.site-header{border-radius:28px}.site-header.menu-open .nav{top:72px;border:2px solid var(--ink);background:#fff}.p-moon{width:64px}.p-star{width:50px}.p-cloud{width:92px}.p-bear{width:74px}.cta-pal{width:64px;top:-16px;margin-top:0}.result-hero{padding-right:24px;padding-top:90px}.result-pal{top:10px;margin-top:0;width:76px}.hero h1{font-size:2.3rem}}
 @media(prefers-reduced-motion:reduce){.ticker-track{animation:none}}
+
+/* v6 — нежнее, больше единорогов */
+:root{--line:#e3d0f3;--heading:#5b3d7e}
+.site-header,.button,.eyebrow,.chip,.floating-sticker,.ticker span,.card,.big-card,.cta-box,.result-card,.result-hero,.favorites-box,.result-upsell,.phrase,.sample,.storybook-card,.flow-shell,.icon-btn,.progress,.answer-btn,.field,.tag,.fav-btn,.fav-pill{border-color:var(--line)}
+.site-header{box-shadow:0 10px 30px rgba(190,150,220,.2)}
+.ticker{border-block-color:var(--line);background:linear-gradient(90deg,#ffe3ef,#fff3c9,#e6ddff,#d9efff)}
+.button{box-shadow:0 5px 0 #ead7f5,0 12px 22px rgba(190,150,220,.22)}
+.button-primary{background:linear-gradient(135deg,#ffb3d1,#d9b8ff);border-color:#fff;box-shadow:0 6px 0 #ecc3dd,0 14px 26px rgba(214,150,200,.32)}
+.button:hover,.button-primary:hover{box-shadow:0 8px 0 #ecc3dd,0 16px 28px rgba(214,150,200,.3)}
+.button:active,.button-primary:active{box-shadow:0 1px 0 #ecc3dd}
+.eyebrow{background:linear-gradient(120deg,#ffe3ef,#fff3c9);box-shadow:0 6px 16px rgba(214,150,200,.18)}
+.hero-card.fairy-scene{border:4px solid #fff;box-shadow:0 26px 60px rgba(176,140,210,.3),inset 0 0 70px rgba(255,255,255,.6)}
+.card,.big-card,.cta-box,.result-card,.result-hero,.storybook-card,.sample,.phrase{box-shadow:0 14px 34px rgba(176,140,210,.16)}
+.hero h1,.section-title,.cta-title{font-weight:500}
+.flow-shell{box-shadow:0 26px 70px rgba(120,80,160,.28)}
+.progress{background:#fff}.answer-btn.selected{border-color:#e39ac3}
+.pal.wing{width:150px;top:22%;z-index:2;filter:drop-shadow(0 8px 10px rgba(176,140,210,.25))}
+.wl{left:6%;transform:rotate(-14deg)}.wr{right:6%;transform:scaleX(-1) rotate(-14deg)}
+.p-heart{width:40px;left:9%;top:36%;transform:rotate(-10deg)}.p-flower{width:48px;right:24%;top:4%}
+.bgpal{position:absolute;opacity:.55;filter:none}
+.dv{width:44px;flex:none}.dv.big{width:110px}
+.fairy-divider{gap:clamp(10px,3vw,34px);flex-wrap:wrap}
+.meadow{padding:84px 0 40px}
+.wishes{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:38px}
+.wish{position:relative;text-align:center;padding:150px 20px 24px;border:2px solid var(--line);border-radius:30px;box-shadow:0 14px 34px rgba(176,140,210,.16);overflow:hidden}
+.wish.w0{background:linear-gradient(170deg,#ffe3ef,#fff)}.wish.w1{background:linear-gradient(170deg,#e9e0ff,#fff)}.wish.w2{background:linear-gradient(170deg,#dff1ff,#fff)}.wish.w3{background:linear-gradient(170deg,#fff3c9,#fff)}
+.wish-art{position:absolute;width:148px;left:50%;top:10px;margin-left:-74px}
+.wish.w1 .wish-art{filter:var(--sticker) hue-rotate(30deg)}.wish.w2 .wish-art{filter:var(--sticker) hue-rotate(80deg)}.wish.w3 .wish-art{filter:var(--sticker) hue-rotate(-40deg)}
+.wish h3{font-family:'Comfortaa',sans-serif;font-size:1.08rem;line-height:1.4;color:var(--heading);margin:0 0 10px}
+.wish p{margin:0 0 12px;color:#5a4673;line-height:1.65;font-size:.94rem}
+.wish-deco{color:#d09bd5;letter-spacing:8px}
+.cta-pal.r{width:130px;margin-top:-65px}
+.result-hero{background:linear-gradient(135deg,#ffe3ef,#efe6ff)}
+@media(max-width:980px){.wishes{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.wishes{grid-template-columns:1fr;max-width:400px;margin-inline:auto}.pal.wing{width:96px}.p-heart,.p-flower{width:32px}.dv{width:32px}.dv.big{width:80px}.cta-pal.r{width:80px;margin-top:0}}
   </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-uni" viewBox="0 0 200 200"><path d="M82 66C40 70 28 120 52 150C40 160 46 186 62 190C60 160 70 140 88 128C70 110 72 88 100 68Z" fill="url(#mane)"/><path d="M60 192C62 140 50 100 80 70C95 55 125 50 145 62C165 74 178 98 172 118C168 132 150 138 138 134C128 150 120 170 118 192Z" fill="#fffdfd"/><path d="M92 62L94 32L116 56Z" fill="#fffdfd"/><path d="M96 56L97 42L108 55Z" fill="#f7cfe0"/><path d="M124 54L148 4L144 62Z" fill="url(#horn)" stroke="#f0cd90" stroke-width="3" stroke-linejoin="round"/><path d="M92 60C118 46 130 70 112 90C100 70 96 66 92 60Z" fill="url(#mane)" opacity=".9"/><path d="M130 94q8 8 16 0M128 90l-4-3M148 90l4-3" fill="none" stroke="#4a2f6b" stroke-width="3.5" stroke-linecap="round"/><ellipse cx="128" cy="112" rx="10" ry="6" fill="#ffb5c9" opacity=".6"/><circle cx="166" cy="118" r="2.6" fill="#4a2f6b"/><path d="M150 127q8 4 14-2" fill="none" stroke="#aa778e" stroke-width="3" stroke-linecap="round"/><circle cx="72" cy="120" r="8" fill="#ffc2dc"/><circle cx="64" cy="132" r="6" fill="#ffe08a"/><circle cx="80" cy="134" r="6" fill="#ffc2dc"/></symbol>
+<symbol id="i-wing" viewBox="0 0 120 100"><path d="M112 62C84 8 34 6 6 20C26 22 34 32 36 40C20 38 10 44 4 54C22 52 32 58 36 66C24 68 18 76 14 86C50 94 98 88 112 62Z" fill="#fff" stroke="#fff" stroke-width="4" stroke-linejoin="round"/><path d="M100 62C80 30 50 24 28 28M92 72C70 54 44 52 24 58" fill="none" stroke="#eadcf8" stroke-width="3" stroke-linecap="round"/></symbol>
+<symbol id="i-heart" viewBox="0 0 100 100"><path d="M50 86C10 58 14 22 36 22C46 22 50 30 50 34C50 30 54 22 64 22C86 22 90 58 50 86Z" fill="#ff9ec4" stroke="#ff9ec4" stroke-width="6" stroke-linejoin="round"/><ellipse cx="34" cy="38" rx="6" ry="4" fill="#fff" opacity=".6" transform="rotate(-30 34 38)"/></symbol>
+<symbol id="i-flower" viewBox="0 0 100 100"><g fill="#ffc2dc"><circle cx="50" cy="25" r="16"/><circle cx="75" cy="43" r="16"/><circle cx="66" cy="72" r="16"/><circle cx="34" cy="72" r="16"/><circle cx="25" cy="43" r="16"/></g><circle cx="50" cy="52" r="13" fill="#ffe08a"/><circle cx="46" cy="50" r="2" fill="#4a2f6b"/><circle cx="55" cy="50" r="2" fill="#4a2f6b"/><path d="M47 56q3 3 6 0" fill="none" stroke="#4a2f6b" stroke-width="2" stroke-linecap="round"/></symbol>
+<symbol id="i-rainbow" viewBox="0 0 120 80"><g fill="none" stroke-width="9" stroke-linecap="round"><path d="M14 70A46 46 0 0 1 106 70" stroke="#ffb3d1"/><path d="M26 70A34 34 0 0 1 94 70" stroke="#ffe08a"/><path d="M38 70A22 22 0 0 1 82 70" stroke="#a9dcff"/></g></symbol></svg>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="unicorn" viewBox="0 0 460 440">
               <defs>
                 <linearGradient id="mane" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffc9df"/><stop offset=".5" stop-color="#d7b9fa"/><stop offset="1" stop-color="#aee8f6"/></linearGradient>
@@ -584,7 +625,7 @@ em{font-style:normal!important;color:inherit!important}
 <symbol id="i-cloud" viewBox="0 0 100 100"><path d="M26 78C10 78 6 56 24 52C22 32 48 24 58 40C72 28 94 42 86 60C100 62 98 78 82 78Z" fill="#dff1ff" stroke="#dff1ff" stroke-width="6" stroke-linejoin="round"/><circle cx="40" cy="60" r="3.2" fill="#4a2f6b"/><circle cx="60" cy="60" r="3.2" fill="#4a2f6b"/><path d="M45 66q5 5 10 0" fill="none" stroke="#4a2f6b" stroke-width="3" stroke-linecap="round"/><circle cx="33" cy="67" r="4" fill="#ff9ec4" opacity=".7"/><circle cx="67" cy="67" r="4" fill="#ff9ec4" opacity=".7"/></symbol>
 <symbol id="i-bear" viewBox="0 0 100 100"><circle cx="26" cy="28" r="12" fill="#f4b98c"/><circle cx="74" cy="28" r="12" fill="#f4b98c"/><circle cx="26" cy="28" r="6" fill="#ffd9bf"/><circle cx="74" cy="28" r="6" fill="#ffd9bf"/><circle cx="50" cy="56" r="32" fill="#f4b98c"/><ellipse cx="50" cy="68" rx="14" ry="11" fill="#ffe8d4"/><ellipse cx="50" cy="63" rx="4.5" ry="3.2" fill="#4a2f6b"/><path d="M50 66v4M44 71q6 5 12 0" fill="none" stroke="#4a2f6b" stroke-width="2.8" stroke-linecap="round"/><circle cx="38" cy="52" r="3.4" fill="#4a2f6b"/><circle cx="62" cy="52" r="3.4" fill="#4a2f6b"/><circle cx="29" cy="63" r="4.5" fill="#ff9ec4" opacity=".6"/><circle cx="71" cy="63" r="4.5" fill="#ff9ec4" opacity=".6"/></symbol>
 <symbol id="i-spark" viewBox="0 0 100 100"><path d="M50 6Q55 45 94 50Q55 55 50 94Q45 55 6 50Q45 45 50 6Z" fill="#c9b6ff" stroke="#c9b6ff" stroke-width="6" stroke-linejoin="round"/></symbol></svg>
-  <div class="sky" aria-hidden="true">
+  <div class="sky" aria-hidden="true"><svg class="art bgpal" style="top:20%;left:3%;width:34px" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-heart"/></svg><svg class="art bgpal" style="top:42%;right:2%;width:46px" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-flower"/></svg><svg class="art bgpal" style="top:64%;left:4%;width:30px" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-spark"/></svg><svg class="art bgpal" style="top:82%;right:5%;width:36px" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-heart"/></svg><svg class="art bgpal" style="top:90%;left:12%;width:40px" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-flower"/></svg>
     <div class="blob one"></div><div class="blob two"></div><div class="blob three"></div><div class="blob four"></div>
     <div class="cloudy c1"></div><div class="cloudy c2"></div>
     <div class="twinkle">✦</div><div class="twinkle">✧</div><div class="twinkle">✦</div><div class="twinkle">✧</div><div class="twinkle">✦</div><div class="twinkle">✧</div>
@@ -600,6 +641,7 @@ em{font-style:normal!important;color:inherit!important}
       <nav class="nav" aria-label="Навигация по сайту">
         <a href="#how">Как это работает</a>
         <a href="#phrases">Имена и чувства</a>
+        <a href="#wishes">Пожелания</a>
         <a href="#story">Наша сказка</a>
         <a href="#faq">FAQ</a>
       </nav>
@@ -615,7 +657,7 @@ em{font-style:normal!important;color:inherit!important}
         <div>
           <div class="eyebrow"><span class="mini-heart">♡</span> создано для самых любимых</div>
           <h1>Для тебя уже есть<br><em>столько любви.</em></h1>
-          <p>Ты ещё не сказал ни слова, а мы уже мечтаем услышать твой смех. ♡<br>Давай найдём имя, которое однажды будем произносить с бесконечной нежностью.</p>
+          <p>Маленькое чудо, ты ещё совсем крошечный, а сердечки мамы и папы уже полны нежности. ♡<br>Давайте вместе найдём имя — мягкое, как облачко, и тёплое, как первые объятия.</p>
           <div class="hero-actions">
             <button class="button button-primary" id="heroStart">Выбрать имя для малыша ♡</button>
             <a class="button button-soft" href="#how">Как рождается имя ✧</a>
@@ -630,7 +672,7 @@ em{font-style:normal!important;color:inherit!important}
         <div class="hero-card fairy-scene" aria-label="Сказочный единорог на облачке под радугой">
           <div class="fairy-halo"></div>
           <div class="rainbow rainbow-one"></div><div class="rainbow rainbow-two"></div>
-          <svg class="art pal p-moon" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-moon"/></svg><svg class="art pal p-star" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-star"/></svg><svg class="art pal p-cloud" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-cloud"/></svg><svg class="art pal p-bear" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-bear"/></svg><svg class="art pal p-spark" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-spark"/></svg><div class="unicorn-wrap">
+          <svg class="art pal p-moon" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-moon"/></svg><svg class="art pal p-star" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-star"/></svg><svg class="art pal p-cloud" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-cloud"/></svg><svg class="art pal p-bear" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-bear"/></svg><svg class="art pal p-spark" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-spark"/></svg><svg class="art pal wing wl" viewBox="0 0 120 100" aria-hidden="true"><use href="#i-wing"/></svg><svg class="art pal wing wr" viewBox="0 0 120 100" aria-hidden="true"><use href="#i-wing"/></svg><svg class="art pal p-heart" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-heart"/></svg><svg class="art pal p-flower" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-flower"/></svg><div class="unicorn-wrap">
             <svg class="unicorn" viewBox="0 0 460 440" aria-hidden="true"><use href="#unicorn"/></svg>
           </div>
           <div class="floating-sticker sticker-top">✧ Ты уже так любим, малыш</div>
@@ -658,7 +700,7 @@ em{font-style:normal!important;color:inherit!important}
           <div class="eyebrow">✧ как это работает</div>
           <h2 class="section-title">От первой мечты —<br><em>до самого любимого имени</em></h2>
           <p class="section-copy">
-            Мы сделали процесс поиска имени по-настоящему красивым: без скуки, без тяжёлых списков, с нежностью к деталям и приятным чувством, что сайт понимает вас.
+            Мы бережно собрали поиск имени в маленькую сказку: без спешки, без длинных списков, с тихой музыкой слов и чувством, что вас здесь понимают и ждут.
           </p>
         </div>
 
@@ -673,7 +715,7 @@ em{font-style:normal!important;color:inherit!important}
             <div class="step-icon"><svg class="art" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-star"/></svg></div>
             <div class="step-number">шаг 02</div>
             <h3>Мы соберём совпадения</h3>
-            <p>Алгоритм сравнит ваши ответы с характеристиками имён и найдёт те варианты, которые откликаются именно вам.</p>
+            <p>Мы тихонько сравним ваши ответы с характером имён и найдём те, что отзовутся в сердце.</p>
           </article>
           <article class="card">
             <div class="step-icon"><svg class="art" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-moon"/></svg></div>
@@ -685,9 +727,7 @@ em{font-style:normal!important;color:inherit!important}
       </div>
     </section>
 
-    <div class="fairy-divider container" aria-hidden="true">
-      <span>✧</span><span>✦</span><span class="divider-cloud">☁</span><span>♡</span><span>✦</span><span>✧</span>
-    </div>
+    <div class="fairy-divider container" aria-hidden="true"><svg class="art dv" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-flower"/></svg><svg class="art dv" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-spark"/></svg><svg class="art dv" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-heart"/></svg><svg class="art dv big" viewBox="0 0 120 80" aria-hidden="true"><use href="#i-rainbow"/></svg><svg class="art dv" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-heart"/></svg><svg class="art dv" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-spark"/></svg><svg class="art dv" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-flower"/></svg></div>
 
     <section class="showcase" id="phrases">
       <div class="container showcase-shell">
@@ -723,6 +763,8 @@ em{font-style:normal!important;color:inherit!important}
         </div>
       </div>
     </section>
+
+    <section class="meadow" id="wishes"><div class="container"><div class="section-head"><div class="eyebrow">✿ поляна нежных слов</div><h2 class="section-title">Единорожки шепчут малышу самые тёплые пожелания</h2><p class="section-copy">Пока вы выбираете имя, сказочные друзья уже собрали для вашего чуда целую охапку доброты, света и нежности.</p></div><div class="wishes"><article class="wish w0"><svg class="art wish-art" viewBox="0 0 200 200" aria-hidden="true"><use href="#i-uni"/></svg><h3>Пусть каждое утро пахнет молоком и мёдом</h3><p>Тёплые лучики, мягкие пелёнки и самые нежные поцелуи в макушку.</p><span class="wish-deco">♡ ✧ ♡</span></article><article class="wish w1"><svg class="art wish-art" viewBox="0 0 200 200" aria-hidden="true"><use href="#i-uni"/></svg><h3>Пусть сны будут лёгкими, как облачко</h3><p>Колыбельная, тихий свет ночника и мама рядом.</p><span class="wish-deco">♡ ✧ ♡</span></article><article class="wish w2"><svg class="art wish-art" viewBox="0 0 200 200" aria-hidden="true"><use href="#i-uni"/></svg><h3>Пусть тебя всегда обнимают добрые руки</h3><p>Столько любви, что хватит на всю твою большую жизнь.</p><span class="wish-deco">♡ ✧ ♡</span></article><article class="wish w3"><svg class="art wish-art" viewBox="0 0 200 200" aria-hidden="true"><use href="#i-uni"/></svg><h3>Пусть твоё имя звучит как колыбельная</h3><p>Мягко, ласково, так, чтобы хотелось шептать его снова и снова.</p><span class="wish-deco">♡ ✧ ♡</span></article></div></div></section>
 
     <section class="love-story" id="story">
       <div class="container">
@@ -763,7 +805,7 @@ em{font-style:normal!important;color:inherit!important}
         <div class="cta-box"><svg class="art cta-pal l" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-bear"/></svg><svg class="art cta-pal r" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-moon"/></svg>
           <div class="eyebrow">☾ начнём нашу сказку?</div>
           <h2 class="cta-title">Имя, которым вы позовёте <em>свою любовь</em></h2>
-          <p class="cta-copy">Пусть поиск имени станет ещё одним счастливым воспоминанием о времени, когда вы так нежно ждали встречи.</p>
+          <p class="cta-copy">Пусть этот вечер будет тихим, свет — мягким, а имя найдётся само, как звёздочка, которая давно ждала вас на небе. ♡</p>
           <button class="button button-primary launch-btn">Найти имя для малыша ✦</button>
         </div>
       </div>
